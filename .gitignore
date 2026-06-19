@@ -1,0 +1,31 @@
+# --- Swift / SPM / Xcode ---
+.build/
+.swiftpm/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# --- CoreML / model artifacts (never commit binaries; ship dicts as small packed resources) ---
+*.mlpackage/
+*.mlmodelc/
+*.mlmodel
+*.npy
+models/
+out/
+
+# --- Upstream RUAccent python sources + weights (cloned/downloaded locally) ---
+ruaccent-src/
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# --- Python ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- misc ---
+.DS_Store
+logs/
