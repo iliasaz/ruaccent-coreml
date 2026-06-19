@@ -35,7 +35,7 @@ be swapped for the full model path.
 | `Sources/RUAccentCoreML/` | the Swift package (protocol + `RUAccent`) |
 | `docs/MIGRATION_PLAN.md` | phased port plan + carried CoreML learnings |
 | `converter/` | Python → CoreML conversion + fixture-dump scripts (outputs gitignored) |
-| `repro/` | on-device validation harness (ANEProbe-style), added in Phase 1 |
+| `repro/` | on-device validation harness (RuaccentProbe), added in Phase 1 |
 
 ## Upstream
 

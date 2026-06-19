@@ -37,7 +37,7 @@ public final class RUAccent: RussianStressing {
         self.configuration = configuration
         // TODO(Phase 1/2/3): load accentor + homograph CoreML models and the packed
         // dictionary from `modelDirectory` (or bundled resources). Validate on device
-        // via repro/ (ANEProbe-style) before trusting any model output.
+        // via repro/ (RuaccentProbe) before trusting any model output.
     }
 
     public func stress(_ text: String, notation: StressNotation) throws -> String {

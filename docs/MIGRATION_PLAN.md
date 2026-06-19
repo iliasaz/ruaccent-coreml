@@ -66,7 +66,7 @@ that runs RUAccent and dumps a `(input → stressed)` **fixture set** = the grou
 ### Phase 1 — Convert the neural accentor → CoreML
 PyTorch → CoreML fp16. Carry the T3 learnings below (manual SDPA if it's a transformer
 with q_len≫1; fp16 norm hardening; static shapes; inline positional encodings). Validate
-Mac-CPU parity vs PyTorch, then **on device** with a small ANEProbe-style probe.
+Mac-CPU parity vs PyTorch, then **on device** with a small RuaccentProbe (`repro/`) probe.
 **Exit:** accentor stress-accuracy ≥ agreed target on **iPhone ANE** (not just Mac).
 
 ### Phase 2 — Convert the homograph disambiguation model → CoreML

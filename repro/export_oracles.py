@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Export per-model CoreML probe oracles (ready-to-feed inputs + expected argmax) from the
-onnxruntime logit refs. Consumed by the Swift ANEProbe to check CPU-vs-ANE parity on device.
+onnxruntime logit refs. Consumed by the Swift RuaccentProbe to check parity across compute units.
 
   repro/oracles.json : { model: {mlpackage, seq_fixed|null, inputs[], cases:[{ids/mask/tt, expected_argmax, label}]} }
 

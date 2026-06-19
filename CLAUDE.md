@@ -27,7 +27,8 @@ CoreML/Swift-runtime: `xcodebuild ... -destination 'platform=macOS'` and
 - `Sources/RUAccentCoreML/` — the package (`RussianStressing` protocol + `RUAccent`).
 - `converter/` — Python → CoreML conversion + fixture-dump scripts. **Outputs gitignored.**
 - `Resources/` (Phase 3) — packed `accents`/`omographs` dictionary extract (~11 MB).
-- `repro/` (Phase 1+) — on-device validation harness (ANEProbe-style).
+- `repro/` (Phase 1+) — on-device validation harness (**RuaccentProbe**; named distinctly from
+  chatterbox's `ANEProbe` to avoid log conflation).
 - `docs/MIGRATION_PLAN.md` — the plan.
 
 ## Working style (carried from chatterbox — these were learned the hard way)
