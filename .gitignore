@@ -26,6 +26,11 @@ ruaccent-src/
 __pycache__/
 *.pyc
 
+# --- converter scratch (downloaded weights, caches, binary refs) ---
+converter/_work/
+converter/_inspect/
+converter/fixtures/refs/
+
 # --- misc ---
 .DS_Store
 logs/
