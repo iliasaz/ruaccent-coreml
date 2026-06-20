@@ -34,3 +34,6 @@ converter/fixtures/refs/
 # --- misc ---
 .DS_Store
 logs/
+
+# --- iOS probe Xcode build output ---
+repro/RuaccentProbe-iOS/build/
