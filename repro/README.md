@@ -22,9 +22,29 @@ cd repro && swift build -c release
 Latest Mac result: **all 4 models PASS on every compute unit** (cpu/gpu/ane/all match the oracle on
 every case). Δ vs cpu ≤ 7e-2 (gpu, harmless — argmax stable). Latency: M1/M3/M4 0.2 ms, M2 1–2.5 ms.
 
-## Run on iPhone/iPad (authoritative ANE)
-The probe logic is plain CoreML — it deploys unchanged inside an iOS app target. Recipe (see the
-`ios-device-testing` / `ios-deploy` skills and chatterbox's device notes):
+## Run on iPhone/iPad (authoritative ANE) — DONE ✅
+`RuaccentProbe-iOS/` is a ready iOS app (SwiftUI + CoreML, team 6CGNH3LTV7, automatic signing,
+increased-memory entitlement, Xcode-26 synchronized file group). It bundles the ship artifacts
+(M1/M4 fp16, M2/M3 palettized) + `oracles.json` and runs the same all-compute-unit probe on launch,
+logging via `os.Logger(privacy:.public)` + a report in Documents.
+
+```bash
+python3 repro/export_oracles.py && cp repro/oracles.json repro/RuaccentProbe-iOS/RuaccentProbe/
+# (re)copy the ship .mlpackages into RuaccentProbe-iOS/RuaccentProbe/Models/  (gitignored)
+cd repro/RuaccentProbe-iOS
+UDID=$(xcrun devicectl list devices | awk '/connected/{print $3; exit}')
+xcodebuild -project RuaccentProbe.xcodeproj -scheme RuaccentProbe -destination "id=$UDID" \
+  -configuration Debug -derivedDataPath build -allowProvisioningUpdates build
+idevicesyslog -u $(idevice_id -l|head -1) --no-colors --process RuaccentProbe > /tmp/rp.log &
+xcrun devicectl device install app --device $UDID build/Build/Products/Debug-iphoneos/RuaccentProbe.app
+xcrun devicectl device process launch --device $UDID com.iliasaz.RuaccentProbe
+grep 'RP:' /tmp/rp.log     # results
+```
+**Result (iPhone 17 Pro Max, iOS 26.5.1):** all 4 models PASS on device across cpu/gpu/ane/all
+(argmax/decision == oracle). Per-op ANE placement: M1 92%, M4 82%, M2 75%, M3 65%. ANE latency
+M1/M3/M4 0.2 ms, M2 1–3 ms. See `RuaccentProbe-iOS/last_device_run.txt`.
+
+For deeper digging (see the `ios-device-testing` / `ios-deploy` skills):
 
 1. **Wrap** `Sources/RuaccentProbe/main.swift`'s logic in a tiny SwiftUI app (a button → run → write
    the report to the app container). Add `oracles.json` + the `.mlpackage`(s) as bundle resources.
