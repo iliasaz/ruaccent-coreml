@@ -39,9 +39,13 @@ context model?), tensor I/O, and tokenizer are **the first thing to nail in Phas
 ## Locked decisions
 
 1. **Separate reusable SPM package** (this repo); chatterbox-coreml depends on it. Keep
-   the package **binary-free**: CoreML `.mlpackage`s ship in the consumer's model bundle
-   (downloaded/installed alongside the TTS models), not committed here. Only a small
-   **packed dictionary extract** (~11 MB target) ships as a package resource.
+   the package **binary-free**: nothing large is committed. The on-device bundle — the four
+   CoreML `.mlpackage`s, the packed `.rapack` dictionaries (full `accents`, 21.75 MiB), and
+   the tokenizer files — is hosted in the **private HF repo `iliasaz/ruaccent-coreml`** and
+   downloaded on-device by `ModelRepository` (swift-transformers `Hub`), mirroring how
+   chatterbox-coreml hosts `iliasaz/chatterbox-turbo-coreml`. A consumer can also supply a
+   local directory via `RUAccent(modelDirectory:)`. (Earlier plan: ship a ~11 MB dict extract
+   as a committed package resource — superseded by HF hosting once the full dict was locked.)
 2. **Output contract:** `U+0301` combining acute placed **after** the stressed vowel by
    default (TTS convention). `.plusBeforeVowel` option reproduces RUAccent's `+` for parity.
 3. **Manual stress always wins** — an existing `U+0301` (or `+`) in the input is preserved.
@@ -74,8 +78,10 @@ Same methodology (it's context-driven, likely a small BERT-class classifier).
 **Exit:** homograph accuracy parity vs Python on device.
 
 ### Phase 3 — Pack dictionaries + Swift loader
-Extract the needed `accents`/`omographs` entries (~11 MB), ship as package resources,
-write the Swift loader + lookup. **Exit:** Swift dictionary lookup byte-matches Python.
+Pack the full `accents`/`omographs`/`yo` dicts into mmap-able `.rapack` v2 (`converter/pack_dicts.py`;
+`docs/SWIFT_DICT_PACK.md`), write the Swift loader + lookup (`Sources/RUAccentCoreML/Dict/`). The packs
+ship via the private HF bundle (not committed), downloaded by `ModelRepository`. **Exit:** Swift
+dictionary lookup byte-matches Python ✔ (DictReaderTests).
 
 ### Phase 4 — Swift preprocessing / tokenizer
 Char-level Russian tokenization + the deterministic Unicode steps (lowercase, NFKD,

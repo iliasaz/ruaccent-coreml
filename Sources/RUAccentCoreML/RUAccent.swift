@@ -138,6 +138,23 @@ public final class RUAccent: RussianStressing {
         try self.init(resources: layout, configuration: configuration)
     }
 
+    /// Download-and-load convenience: fetch the on-device bundle (CoreML models + `.rapack`
+    /// dictionaries + tokenizers) from the private HF repo via `ModelRepository`, then load it.
+    /// The downloaded snapshot directory has the same `coreml/`+`dictpack/`+`nn/` layout as
+    /// `init(modelDirectory:)`. A token is required for the private default repo (see
+    /// `ModelRepository.download` for the resolution order).
+    public convenience init(
+        downloadingFrom repoId: String = ModelRepository.defaultRepoId,
+        hfHome: URL? = nil,
+        hfToken: String? = nil,
+        configuration: Configuration = .init(),
+        progress: (@Sendable (Double) -> Void)? = nil
+    ) async throws {
+        let dir = try await ModelRepository.download(
+            repoId: repoId, hfHome: hfHome, hfToken: hfToken, progress: progress)
+        try self.init(modelDirectory: dir, configuration: configuration)
+    }
+
     /// Test/advanced seam: inject a pre-built `InternalPipeline` (real or stubbed gates).
     init(pipeline: InternalPipeline, configuration: Configuration) {
         self.pipeline = pipeline
