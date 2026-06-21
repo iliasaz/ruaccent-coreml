@@ -1,0 +1,145 @@
+{
+  "M1_accent": {
+    "arch": "RoFormerForTokenClassification",
+    "inputs": [
+      {
+        "name": "input_ids",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      },
+      {
+        "name": "attention_mask",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      },
+      {
+        "name": "token_type_ids",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          3
+        ],
+        "type": "tensor(float)"
+      }
+    ]
+  },
+  "M2_omograph": {
+    "arch": "DebertaForSequenceClassification",
+    "inputs": [
+      {
+        "name": "input_ids",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      },
+      {
+        "name": "attention_mask",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "shape": [
+          "batch_size",
+          2
+        ],
+        "type": "tensor(float)"
+      }
+    ]
+  },
+  "M3_stress_usage": {
+    "arch": "BertForTokenClassification",
+    "inputs": [
+      {
+        "name": "input_ids",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      },
+      {
+        "name": "attention_mask",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      },
+      {
+        "name": "token_type_ids",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          3
+        ],
+        "type": "tensor(float)"
+      }
+    ]
+  },
+  "M4_yo_homograph": {
+    "arch": "DistilBertForTokenClassification",
+    "inputs": [
+      {
+        "name": "input_ids",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      },
+      {
+        "name": "attention_mask",
+        "shape": [
+          "batch_size",
+          "sequence_length"
+        ],
+        "type": "tensor(int64)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "logits",
+        "shape": [
+          "batch_size",
+          "sequence_length",
+          3
+        ],
+        "type": "tensor(float)"
+      }
+    ]
+  }
+}

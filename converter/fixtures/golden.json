@@ -1,0 +1,8302 @@
+{
+  "meta": {
+    "variant": "turbo3.1",
+    "use_dictionary": true,
+    "tiny_mode": false,
+    "notation_internal": "plus_before_vowel",
+    "ruaccent_version": "1.5.8.3",
+    "float_round_dp": 6,
+    "normalize_regex": "[^a-zA-Z0-9\\sа-яА-ЯёЁ—.,!?:;''(){}\\[\\]«»„“”-]",
+    "labels": {
+      "M1_accent": {
+        "0": "NO",
+        "1": "STRESS_PRIMARY",
+        "2": "STRESS_SECONDARY"
+      },
+      "M3_stress_usage": {
+        "0": "NO_STRESS",
+        "1": "PUNCT",
+        "2": "STRESS"
+      },
+      "M4_yo_homograph": {
+        "0": "NO_YO",
+        "1": "PUNCT",
+        "2": "YO"
+      },
+      "M2_omograph": {
+        "0": "false",
+        "1": "true"
+      }
+    }
+  },
+  "pipeline": [
+    {
+      "input": "на двери висит замок",
+      "normalized": "на двери висит замок",
+      "sentences": [
+        "на двери висит замок"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "на двери висит замок",
+          "words": [
+            "на",
+            "двери",
+            "висит",
+            "замок"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "на",
+              "entity": "NO_STRESS",
+              "score": 0.94646
+            },
+            {
+              "word": "двери",
+              "entity": "STRESS",
+              "score": 0.998082
+            },
+            {
+              "word": "висит",
+              "entity": "STRESS",
+              "score": 0.981155
+            },
+            {
+              "word": "замок",
+              "entity": "STRESS",
+              "score": 0.882112
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "на",
+            "двери",
+            "висит",
+            "замок"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "двери",
+              "variants": [
+                "дв+ери",
+                "двер+и"
+              ],
+              "marked_text": "на <w>двери</w>  висит замок",
+              "hypothesis": "дв+ери"
+            },
+            {
+              "position": 1,
+              "word": "двери",
+              "variants": [
+                "дв+ери",
+                "двер+и"
+              ],
+              "marked_text": "на <w>двери</w>  висит замок",
+              "hypothesis": "двер+и"
+            },
+            {
+              "position": 3,
+              "word": "замок",
+              "variants": [
+                "з+амок",
+                "зам+ок"
+              ],
+              "marked_text": "на двери висит <w>замок</w> ",
+              "hypothesis": "з+амок"
+            },
+            {
+              "position": 3,
+              "word": "замок",
+              "variants": [
+                "з+амок",
+                "зам+ок"
+              ],
+              "marked_text": "на двери висит <w>замок</w> ",
+              "hypothesis": "зам+ок"
+            }
+          ],
+          "after_omographs": [
+            "на",
+            "двер+и",
+            "висит",
+            "зам+ок"
+          ],
+          "after_accent": [
+            "на",
+            "двер+и",
+            "вис+ит",
+            "зам+ок"
+          ],
+          "rendered": "на двер+и вис+ит зам+ок"
+        }
+      ],
+      "rendered_join": "на двер+и вис+ит зам+ок",
+      "final": "на двер+и вис+ит зам+ок",
+      "final_matches_join": true
+    },
+    {
+      "input": "на горе стоит старинный замок",
+      "normalized": "на горе стоит старинный замок",
+      "sentences": [
+        "на горе стоит старинный замок"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "на горе стоит старинный замок",
+          "words": [
+            "на",
+            "горе",
+            "стоит",
+            "старинный",
+            "замок"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "на",
+              "entity": "NO_STRESS",
+              "score": 0.895764
+            },
+            {
+              "word": "горе",
+              "entity": "STRESS",
+              "score": 0.995589
+            },
+            {
+              "word": "стоит",
+              "entity": "STRESS",
+              "score": 0.998594
+            },
+            {
+              "word": "старинный",
+              "entity": "STRESS",
+              "score": 0.999577
+            },
+            {
+              "word": "замок",
+              "entity": "STRESS",
+              "score": 0.994331
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "на",
+            "горе",
+            "стоит",
+            "старинный",
+            "замок"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "горе",
+              "variants": [
+                "г+оре",
+                "гор+е"
+              ],
+              "marked_text": "на <w>горе</w>  стоит старинный замок",
+              "hypothesis": "г+оре"
+            },
+            {
+              "position": 1,
+              "word": "горе",
+              "variants": [
+                "г+оре",
+                "гор+е"
+              ],
+              "marked_text": "на <w>горе</w>  стоит старинный замок",
+              "hypothesis": "гор+е"
+            },
+            {
+              "position": 2,
+              "word": "стоит",
+              "variants": [
+                "ст+оит",
+                "сто+ит"
+              ],
+              "marked_text": "на горе <w>стоит</w>  старинный замок",
+              "hypothesis": "ст+оит"
+            },
+            {
+              "position": 2,
+              "word": "стоит",
+              "variants": [
+                "ст+оит",
+                "сто+ит"
+              ],
+              "marked_text": "на горе <w>стоит</w>  старинный замок",
+              "hypothesis": "сто+ит"
+            },
+            {
+              "position": 4,
+              "word": "замок",
+              "variants": [
+                "з+амок",
+                "зам+ок"
+              ],
+              "marked_text": "на горе стоит старинный <w>замок</w> ",
+              "hypothesis": "з+амок"
+            },
+            {
+              "position": 4,
+              "word": "замок",
+              "variants": [
+                "з+амок",
+                "зам+ок"
+              ],
+              "marked_text": "на горе стоит старинный <w>замок</w> ",
+              "hypothesis": "зам+ок"
+            }
+          ],
+          "after_omographs": [
+            "на",
+            "гор+е",
+            "ст+оит",
+            "старинный",
+            "з+амок"
+          ],
+          "after_accent": [
+            "на",
+            "гор+е",
+            "ст+оит",
+            "стар+инный",
+            "з+амок"
+          ],
+          "rendered": "на гор+е ст+оит стар+инный з+амок"
+        }
+      ],
+      "rendered_join": "на гор+е ст+оит стар+инный з+амок",
+      "final": "на гор+е ст+оит стар+инный з+амок",
+      "final_matches_join": true
+    },
+    {
+      "input": "я мою посуду",
+      "normalized": "я мою посуду",
+      "sentences": [
+        "я мою посуду"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "я мою посуду",
+          "words": [
+            "я",
+            "мою",
+            "посуду"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "я",
+              "entity": "STRESS",
+              "score": 0.963144
+            },
+            {
+              "word": "мою",
+              "entity": "STRESS",
+              "score": 0.999276
+            },
+            {
+              "word": "посуду",
+              "entity": "STRESS",
+              "score": 0.999651
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "я",
+            "мою",
+            "посуду"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "мою",
+              "variants": [
+                "м+ою",
+                "мо+ю"
+              ],
+              "marked_text": "я <w>мою</w>  посуду",
+              "hypothesis": "м+ою"
+            },
+            {
+              "position": 1,
+              "word": "мою",
+              "variants": [
+                "м+ою",
+                "мо+ю"
+              ],
+              "marked_text": "я <w>мою</w>  посуду",
+              "hypothesis": "мо+ю"
+            }
+          ],
+          "after_omographs": [
+            "я",
+            "м+ою",
+            "посуду"
+          ],
+          "after_accent": [
+            "я",
+            "м+ою",
+            "пос+уду"
+          ],
+          "rendered": "я м+ою пос+уду"
+        }
+      ],
+      "rendered_join": "я м+ою пос+уду",
+      "final": "я м+ою пос+уду",
+      "final_matches_join": true
+    },
+    {
+      "input": "это мой дом",
+      "normalized": "это мой дом",
+      "sentences": [
+        "это мой дом"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "это мой дом",
+          "words": [
+            "это",
+            "мой",
+            "дом"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "это",
+              "entity": "STRESS",
+              "score": 0.972628
+            },
+            {
+              "word": "мой",
+              "entity": "STRESS",
+              "score": 0.911569
+            },
+            {
+              "word": "дом",
+              "entity": "STRESS",
+              "score": 0.989119
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "это",
+            "мой",
+            "дом"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "это",
+            "мой",
+            "дом"
+          ],
+          "after_accent": [
+            "+это",
+            "м+ой",
+            "д+ом"
+          ],
+          "rendered": "+это м+ой д+ом"
+        }
+      ],
+      "rendered_join": "+это м+ой д+ом",
+      "final": "+это м+ой д+ом",
+      "final_matches_join": true
+    },
+    {
+      "input": "мужики косили траву косой",
+      "normalized": "мужики косили траву косой",
+      "sentences": [
+        "мужики косили траву косой"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "мужики косили траву косой",
+          "words": [
+            "мужики",
+            "косили",
+            "траву",
+            "косой"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "мужики",
+              "entity": "STRESS",
+              "score": 0.998267
+            },
+            {
+              "word": "косили",
+              "entity": "STRESS",
+              "score": 0.99906
+            },
+            {
+              "word": "траву",
+              "entity": "STRESS",
+              "score": 0.995641
+            },
+            {
+              "word": "косой",
+              "entity": "STRESS",
+              "score": 0.983011
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "мужики",
+            "косили",
+            "траву",
+            "косой"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "мужики",
+            "косили",
+            "траву",
+            "косой"
+          ],
+          "after_accent": [
+            "мужик+и",
+            "кос+или",
+            "трав+у",
+            "кос+ой"
+          ],
+          "rendered": "мужик+и кос+или трав+у кос+ой"
+        }
+      ],
+      "rendered_join": "мужик+и кос+или трав+у кос+ой",
+      "final": "мужик+и кос+или трав+у кос+ой",
+      "final_matches_join": true
+    },
+    {
+      "input": "у неё была русая коса",
+      "normalized": "у неё была русая коса",
+      "sentences": [
+        "у неё была русая коса"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "у неё была русая коса",
+          "words": [
+            "у",
+            "неё",
+            "была",
+            "русая",
+            "коса"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "у",
+              "entity": "NO_STRESS",
+              "score": 0.934986
+            },
+            {
+              "word": "неё",
+              "entity": "NO_STRESS",
+              "score": 0.992527
+            },
+            {
+              "word": "была",
+              "entity": "STRESS",
+              "score": 0.995389
+            },
+            {
+              "word": "русая",
+              "entity": "STRESS",
+              "score": 0.999067
+            },
+            {
+              "word": "коса",
+              "entity": "STRESS",
+              "score": 0.998522
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "у",
+            "неё",
+            "была",
+            "русая",
+            "коса"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 2,
+              "word": "была",
+              "variants": [
+                "б+ыла",
+                "был+а"
+              ],
+              "marked_text": "у неё <w>была</w>  русая коса",
+              "hypothesis": "б+ыла"
+            },
+            {
+              "position": 2,
+              "word": "была",
+              "variants": [
+                "б+ыла",
+                "был+а"
+              ],
+              "marked_text": "у неё <w>была</w>  русая коса",
+              "hypothesis": "был+а"
+            },
+            {
+              "position": 4,
+              "word": "коса",
+              "variants": [
+                "к+оса",
+                "кос+а"
+              ],
+              "marked_text": "у неё была русая <w>коса</w> ",
+              "hypothesis": "к+оса"
+            },
+            {
+              "position": 4,
+              "word": "коса",
+              "variants": [
+                "к+оса",
+                "кос+а"
+              ],
+              "marked_text": "у неё была русая <w>коса</w> ",
+              "hypothesis": "кос+а"
+            }
+          ],
+          "after_omographs": [
+            "у",
+            "неё",
+            "был+а",
+            "русая",
+            "кос+а"
+          ],
+          "after_accent": [
+            "у",
+            "неё",
+            "был+а",
+            "р+усая",
+            "кос+а"
+          ],
+          "rendered": "у неё был+а р+усая кос+а"
+        }
+      ],
+      "rendered_join": "у неё был+а р+усая кос+а",
+      "final": "у неё был+а р+усая кос+а",
+      "final_matches_join": true
+    },
+    {
+      "input": "уже прошёл целый час",
+      "normalized": "уже прошёл целый час",
+      "sentences": [
+        "уже прошёл целый час"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "уже прошёл целый час",
+          "words": [
+            "уже",
+            "прошёл",
+            "целый",
+            "час"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "уже",
+              "entity": "STRESS",
+              "score": 0.996497
+            },
+            {
+              "word": "прошёл",
+              "entity": "NO_STRESS",
+              "score": 0.994342
+            },
+            {
+              "word": "целый",
+              "entity": "STRESS",
+              "score": 0.858012
+            },
+            {
+              "word": "час",
+              "entity": "STRESS",
+              "score": 0.986779
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "уже",
+            "прошёл",
+            "целый",
+            "час"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 0,
+              "word": "уже",
+              "variants": [
+                "+уже",
+                "уж+е"
+              ],
+              "marked_text": "<w>уже</w>  прошёл целый час",
+              "hypothesis": "+уже"
+            },
+            {
+              "position": 0,
+              "word": "уже",
+              "variants": [
+                "+уже",
+                "уж+е"
+              ],
+              "marked_text": "<w>уже</w>  прошёл целый час",
+              "hypothesis": "уж+е"
+            }
+          ],
+          "after_omographs": [
+            "уж+е",
+            "прошёл",
+            "целый",
+            "час"
+          ],
+          "after_accent": [
+            "уж+е",
+            "прошёл",
+            "ц+елый",
+            "ч+ас"
+          ],
+          "rendered": "уж+е прошёл ц+елый ч+ас"
+        }
+      ],
+      "rendered_join": "уж+е прошёл ц+елый ч+ас",
+      "final": "уж+е прошёл ц+елый ч+ас",
+      "final_matches_join": true
+    },
+    {
+      "input": "дорога стала уже",
+      "normalized": "дорога стала уже",
+      "sentences": [
+        "дорога стала уже"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "дорога стала уже",
+          "words": [
+            "дорога",
+            "стала",
+            "уже"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "дорога",
+              "entity": "STRESS",
+              "score": 0.990035
+            },
+            {
+              "word": "стала",
+              "entity": "STRESS",
+              "score": 0.995369
+            },
+            {
+              "word": "уже",
+              "entity": "STRESS",
+              "score": 0.982271
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "дорога",
+            "стала",
+            "уже"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 0,
+              "word": "дорога",
+              "variants": [
+                "дор+ога",
+                "дорог+а"
+              ],
+              "marked_text": "<w>дорога</w>  стала уже",
+              "hypothesis": "дор+ога"
+            },
+            {
+              "position": 0,
+              "word": "дорога",
+              "variants": [
+                "дор+ога",
+                "дорог+а"
+              ],
+              "marked_text": "<w>дорога</w>  стала уже",
+              "hypothesis": "дорог+а"
+            },
+            {
+              "position": 2,
+              "word": "уже",
+              "variants": [
+                "+уже",
+                "уж+е"
+              ],
+              "marked_text": "дорога стала <w>уже</w> ",
+              "hypothesis": "+уже"
+            },
+            {
+              "position": 2,
+              "word": "уже",
+              "variants": [
+                "+уже",
+                "уж+е"
+              ],
+              "marked_text": "дорога стала <w>уже</w> ",
+              "hypothesis": "уж+е"
+            }
+          ],
+          "after_omographs": [
+            "дор+ога",
+            "стала",
+            "+уже"
+          ],
+          "after_accent": [
+            "дор+ога",
+            "ст+ала",
+            "+уже"
+          ],
+          "rendered": "дор+ога ст+ала +уже"
+        }
+      ],
+      "rendered_join": "дор+ога ст+ала +уже",
+      "final": "дор+ога ст+ала +уже",
+      "final_matches_join": true
+    },
+    {
+      "input": "большие белки прыгали по веткам",
+      "normalized": "большие белки прыгали по веткам",
+      "sentences": [
+        "большие белки прыгали по веткам"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "большие белки прыгали по веткам",
+          "words": [
+            "большие",
+            "белки",
+            "прыгали",
+            "по",
+            "веткам"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "большие",
+              "entity": "STRESS",
+              "score": 0.998946
+            },
+            {
+              "word": "белки",
+              "entity": "STRESS",
+              "score": 0.998733
+            },
+            {
+              "word": "прыгали",
+              "entity": "STRESS",
+              "score": 0.999416
+            },
+            {
+              "word": "по",
+              "entity": "NO_STRESS",
+              "score": 0.978518
+            },
+            {
+              "word": "веткам",
+              "entity": "STRESS",
+              "score": 0.998641
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "большие",
+            "белки",
+            "прыгали",
+            "по",
+            "веткам"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 0,
+              "word": "большие",
+              "variants": [
+                "б+ольшие",
+                "больш+ие"
+              ],
+              "marked_text": "<w>большие</w>  белки прыгали по веткам",
+              "hypothesis": "б+ольшие"
+            },
+            {
+              "position": 0,
+              "word": "большие",
+              "variants": [
+                "б+ольшие",
+                "больш+ие"
+              ],
+              "marked_text": "<w>большие</w>  белки прыгали по веткам",
+              "hypothesis": "больш+ие"
+            },
+            {
+              "position": 1,
+              "word": "белки",
+              "variants": [
+                "б+елки",
+                "белк+и"
+              ],
+              "marked_text": "большие <w>белки</w>  прыгали по веткам",
+              "hypothesis": "б+елки"
+            },
+            {
+              "position": 1,
+              "word": "белки",
+              "variants": [
+                "б+елки",
+                "белк+и"
+              ],
+              "marked_text": "большие <w>белки</w>  прыгали по веткам",
+              "hypothesis": "белк+и"
+            }
+          ],
+          "after_omographs": [
+            "больш+ие",
+            "б+елки",
+            "прыгали",
+            "по",
+            "веткам"
+          ],
+          "after_accent": [
+            "больш+ие",
+            "б+елки",
+            "пр+ыгали",
+            "по",
+            "в+еткам"
+          ],
+          "rendered": "больш+ие б+елки пр+ыгали по в+еткам"
+        }
+      ],
+      "rendered_join": "больш+ие б+елки пр+ыгали по в+еткам",
+      "final": "больш+ие б+елки пр+ыгали по в+еткам",
+      "final_matches_join": true
+    },
+    {
+      "input": "в яйце много белка",
+      "normalized": "в яйце много белка",
+      "sentences": [
+        "в яйце много белка"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "в яйце много белка",
+          "words": [
+            "в",
+            "яйце",
+            "много",
+            "белка"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "в",
+              "entity": "NO_STRESS",
+              "score": 0.999793
+            },
+            {
+              "word": "яйце",
+              "entity": "STRESS",
+              "score": 0.975732
+            },
+            {
+              "word": "много",
+              "entity": "STRESS",
+              "score": 0.943305
+            },
+            {
+              "word": "белка",
+              "entity": "STRESS",
+              "score": 0.996078
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "в",
+            "яйце",
+            "много",
+            "белка"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 3,
+              "word": "белка",
+              "variants": [
+                "б+елка",
+                "белк+а"
+              ],
+              "marked_text": "в яйце много <w>белка</w> ",
+              "hypothesis": "б+елка"
+            },
+            {
+              "position": 3,
+              "word": "белка",
+              "variants": [
+                "б+елка",
+                "белк+а"
+              ],
+              "marked_text": "в яйце много <w>белка</w> ",
+              "hypothesis": "белк+а"
+            }
+          ],
+          "after_omographs": [
+            "в",
+            "яйце",
+            "много",
+            "белк+а"
+          ],
+          "after_accent": [
+            "в",
+            "яйц+е",
+            "мн+ого",
+            "белк+а"
+          ],
+          "rendered": "в яйц+е мн+ого белк+а"
+        }
+      ],
+      "rendered_join": "в яйц+е мн+ого белк+а",
+      "final": "в яйц+е мн+ого белк+а",
+      "final_matches_join": true
+    },
+    {
+      "input": "мы поехали домой",
+      "normalized": "мы поехали домой",
+      "sentences": [
+        "мы поехали домой"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "мы поехали домой",
+          "words": [
+            "мы",
+            "поехали",
+            "домой"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "мы",
+              "entity": "STRESS",
+              "score": 0.981532
+            },
+            {
+              "word": "поехали",
+              "entity": "STRESS",
+              "score": 0.999833
+            },
+            {
+              "word": "домой",
+              "entity": "STRESS",
+              "score": 0.998849
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "мы",
+            "поехали",
+            "домой"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "мы",
+            "поехали",
+            "домой"
+          ],
+          "after_accent": [
+            "м+ы",
+            "по+ехали",
+            "дом+ой"
+          ],
+          "rendered": "м+ы по+ехали дом+ой"
+        }
+      ],
+      "rendered_join": "м+ы по+ехали дом+ой",
+      "final": "м+ы по+ехали дом+ой",
+      "final_matches_join": true
+    },
+    {
+      "input": "стрелки часов показывают полдень",
+      "normalized": "стрелки часов показывают полдень",
+      "sentences": [
+        "стрелки часов показывают полдень"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "стрелки часов показывают полдень",
+          "words": [
+            "стрелки",
+            "часов",
+            "показывают",
+            "полдень"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "стрелки",
+              "entity": "STRESS",
+              "score": 0.997759
+            },
+            {
+              "word": "часов",
+              "entity": "STRESS",
+              "score": 0.999172
+            },
+            {
+              "word": "показывают",
+              "entity": "STRESS",
+              "score": 0.999647
+            },
+            {
+              "word": "полдень",
+              "entity": "STRESS",
+              "score": 0.999546
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "стрелки",
+            "часов",
+            "показывают",
+            "полдень"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 0,
+              "word": "стрелки",
+              "variants": [
+                "стр+елки",
+                "стрелк+и"
+              ],
+              "marked_text": "<w>стрелки</w>  часов показывают полдень",
+              "hypothesis": "стр+елки"
+            },
+            {
+              "position": 0,
+              "word": "стрелки",
+              "variants": [
+                "стр+елки",
+                "стрелк+и"
+              ],
+              "marked_text": "<w>стрелки</w>  часов показывают полдень",
+              "hypothesis": "стрелк+и"
+            }
+          ],
+          "after_omographs": [
+            "стр+елки",
+            "часов",
+            "показывают",
+            "полдень"
+          ],
+          "after_accent": [
+            "стр+елки",
+            "час+ов",
+            "пок+азывают",
+            "п+олдень"
+          ],
+          "rendered": "стр+елки час+ов пок+азывают п+олдень"
+        }
+      ],
+      "rendered_join": "стр+елки час+ов пок+азывают п+олдень",
+      "final": "стр+елки час+ов пок+азывают п+олдень",
+      "final_matches_join": true
+    },
+    {
+      "input": "мой",
+      "normalized": "мой",
+      "sentences": [
+        "мой"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "мой",
+          "words": [
+            "мой"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "мой",
+              "entity": "STRESS",
+              "score": 0.982888
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "мой"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "мой"
+          ],
+          "after_accent": [
+            "м+ой"
+          ],
+          "rendered": "м+ой"
+        }
+      ],
+      "rendered_join": "м+ой",
+      "final": "м+ой",
+      "final_matches_join": true
+    },
+    {
+      "input": "русский",
+      "normalized": "русский",
+      "sentences": [
+        "русский"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "русский",
+          "words": [
+            "русский"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "русский",
+              "entity": "STRESS",
+              "score": 0.997355
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "русский"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "русский"
+          ],
+          "after_accent": [
+            "р+усский"
+          ],
+          "rendered": "р+усский"
+        }
+      ],
+      "rendered_join": "р+усский",
+      "final": "р+усский",
+      "final_matches_join": true
+    },
+    {
+      "input": "тёплый",
+      "normalized": "тёплый",
+      "sentences": [
+        "тёплый"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "тёплый",
+          "words": [
+            "тёплый"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "тёплый",
+              "entity": "NO_STRESS",
+              "score": 0.99261
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "тёплый"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "тёплый"
+          ],
+          "after_accent": [
+            "тёплый"
+          ],
+          "rendered": "тёплый"
+        }
+      ],
+      "rendered_join": "тёплый",
+      "final": "тёплый",
+      "final_matches_join": true
+    },
+    {
+      "input": "ёжик",
+      "normalized": "ёжик",
+      "sentences": [
+        "ёжик"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "ёжик",
+          "words": [
+            "ёжик"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "ёжик",
+              "entity": "NO_STRESS",
+              "score": 0.990248
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "ёжик"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "ёжик"
+          ],
+          "after_accent": [
+            "ёжик"
+          ],
+          "rendered": "ёжик"
+        }
+      ],
+      "rendered_join": "ёжик",
+      "final": "ёжик",
+      "final_matches_join": true
+    },
+    {
+      "input": "йога",
+      "normalized": "йога",
+      "sentences": [
+        "йога"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "йога",
+          "words": [
+            "йога"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "йога",
+              "entity": "STRESS",
+              "score": 0.999428
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "йога"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "йога"
+          ],
+          "after_accent": [
+            "й+ога"
+          ],
+          "rendered": "й+ога"
+        }
+      ],
+      "rendered_join": "й+ога",
+      "final": "й+ога",
+      "final_matches_join": true
+    },
+    {
+      "input": "мой тёплый дом",
+      "normalized": "мой тёплый дом",
+      "sentences": [
+        "мой тёплый дом"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "мой тёплый дом",
+          "words": [
+            "мой",
+            "тёплый",
+            "дом"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "мой",
+              "entity": "NO_STRESS",
+              "score": 0.898137
+            },
+            {
+              "word": "тёплый",
+              "entity": "NO_STRESS",
+              "score": 0.994953
+            },
+            {
+              "word": "дом",
+              "entity": "STRESS",
+              "score": 0.992707
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "мой",
+            "тёплый",
+            "дом"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "мой",
+            "тёплый",
+            "дом"
+          ],
+          "after_accent": [
+            "мой",
+            "тёплый",
+            "д+ом"
+          ],
+          "rendered": "мой тёплый д+ом"
+        }
+      ],
+      "rendered_join": "мой тёплый д+ом",
+      "final": "мой тёплый д+ом",
+      "final_matches_join": true
+    },
+    {
+      "input": "ежик нашел гриб",
+      "normalized": "ежик нашел гриб",
+      "sentences": [
+        "ежик нашел гриб"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "ежик нашел гриб",
+          "words": [
+            "ежик",
+            "нашел",
+            "гриб"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "ежик",
+              "entity": "STRESS",
+              "score": 0.968817
+            },
+            {
+              "word": "нашел",
+              "entity": "STRESS",
+              "score": 0.987302
+            },
+            {
+              "word": "гриб",
+              "entity": "STRESS",
+              "score": 0.859548
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "ёжик",
+            "нашёл",
+            "гриб"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "ёжик",
+            "нашёл",
+            "гриб"
+          ],
+          "after_accent": [
+            "+ёжик",
+            "наш+ёл",
+            "гр+иб"
+          ],
+          "rendered": "+ёжик наш+ёл гр+иб"
+        }
+      ],
+      "rendered_join": "+ёжик наш+ёл гр+иб",
+      "final": "+ёжик наш+ёл гр+иб",
+      "final_matches_join": true
+    },
+    {
+      "input": "теплый летний вечер",
+      "normalized": "теплый летний вечер",
+      "sentences": [
+        "теплый летний вечер"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "теплый летний вечер",
+          "words": [
+            "теплый",
+            "летний",
+            "вечер"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "теплый",
+              "entity": "STRESS",
+              "score": 0.984579
+            },
+            {
+              "word": "летний",
+              "entity": "STRESS",
+              "score": 0.998791
+            },
+            {
+              "word": "вечер",
+              "entity": "STRESS",
+              "score": 0.999147
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "тёплый",
+            "летний",
+            "вечер"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "тёплый",
+            "летний",
+            "вечер"
+          ],
+          "after_accent": [
+            "т+ёплый",
+            "л+етний",
+            "в+ечер"
+          ],
+          "rendered": "т+ёплый л+етний в+ечер"
+        }
+      ],
+      "rendered_join": "т+ёплый л+етний в+ечер",
+      "final": "т+ёплый л+етний в+ечер",
+      "final_matches_join": true
+    },
+    {
+      "input": "она все еще здесь",
+      "normalized": "она все еще здесь",
+      "sentences": [
+        "она все еще здесь"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "она все еще здесь",
+          "words": [
+            "она",
+            "все",
+            "еще",
+            "здесь"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "она",
+              "entity": "STRESS",
+              "score": 0.845167
+            },
+            {
+              "word": "все",
+              "entity": "NO_STRESS",
+              "score": 0.54156
+            },
+            {
+              "word": "еще",
+              "entity": "STRESS",
+              "score": 0.804972
+            },
+            {
+              "word": "здесь",
+              "entity": "STRESS",
+              "score": 0.716866
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "она",
+            "всё",
+            "ещё",
+            "здесь"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "она",
+            "всё",
+            "ещё",
+            "здесь"
+          ],
+          "after_accent": [
+            "он+а",
+            "всё",
+            "ещ+ё",
+            "зд+есь"
+          ],
+          "rendered": "он+а всё ещ+ё зд+есь"
+        }
+      ],
+      "rendered_join": "он+а всё ещ+ё зд+есь",
+      "final": "он+а всё ещ+ё зд+есь",
+      "final_matches_join": true
+    },
+    {
+      "input": "все люди разные",
+      "normalized": "все люди разные",
+      "sentences": [
+        "все люди разные"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "все люди разные",
+          "words": [
+            "все",
+            "люди",
+            "разные"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "все",
+              "entity": "NO_STRESS",
+              "score": 0.914916
+            },
+            {
+              "word": "люди",
+              "entity": "STRESS",
+              "score": 0.995474
+            },
+            {
+              "word": "разные",
+              "entity": "STRESS",
+              "score": 0.999591
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "все",
+            "люди",
+            "разные"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "все",
+            "люди",
+            "разные"
+          ],
+          "after_accent": [
+            "все",
+            "л+юди",
+            "р+азные"
+          ],
+          "rendered": "все л+юди р+азные"
+        }
+      ],
+      "rendered_join": "все л+юди р+азные",
+      "final": "все л+юди р+азные",
+      "final_matches_join": true
+    },
+    {
+      "input": "он надел черный пиджак",
+      "normalized": "он надел черный пиджак",
+      "sentences": [
+        "он надел черный пиджак"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "он надел черный пиджак",
+          "words": [
+            "он",
+            "надел",
+            "черный",
+            "пиджак"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "он",
+              "entity": "STRESS",
+              "score": 0.849392
+            },
+            {
+              "word": "надел",
+              "entity": "STRESS",
+              "score": 0.994461
+            },
+            {
+              "word": "черный",
+              "entity": "STRESS",
+              "score": 0.985178
+            },
+            {
+              "word": "пиджак",
+              "entity": "STRESS",
+              "score": 0.99723
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "он",
+            "надел",
+            "чёрный",
+            "пиджак"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "он",
+            "надел",
+            "чёрный",
+            "пиджак"
+          ],
+          "after_accent": [
+            "+он",
+            "над+ел",
+            "ч+ёрный",
+            "пидж+ак"
+          ],
+          "rendered": "+он над+ел ч+ёрный пидж+ак"
+        }
+      ],
+      "rendered_join": "+он над+ел ч+ёрный пидж+ак",
+      "final": "+он над+ел ч+ёрный пидж+ак",
+      "final_matches_join": true
+    },
+    {
+      "input": "это была теплая встреча",
+      "normalized": "это была теплая встреча",
+      "sentences": [
+        "это была теплая встреча"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "это была теплая встреча",
+          "words": [
+            "это",
+            "была",
+            "теплая",
+            "встреча"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "это",
+              "entity": "STRESS",
+              "score": 0.991488
+            },
+            {
+              "word": "была",
+              "entity": "STRESS",
+              "score": 0.991686
+            },
+            {
+              "word": "теплая",
+              "entity": "STRESS",
+              "score": 0.999247
+            },
+            {
+              "word": "встреча",
+              "entity": "STRESS",
+              "score": 0.996648
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "это",
+            "была",
+            "тёплая",
+            "встреча"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "была",
+              "variants": [
+                "б+ыла",
+                "был+а"
+              ],
+              "marked_text": "это <w>была</w>  тёплая встреча",
+              "hypothesis": "б+ыла"
+            },
+            {
+              "position": 1,
+              "word": "была",
+              "variants": [
+                "б+ыла",
+                "был+а"
+              ],
+              "marked_text": "это <w>была</w>  тёплая встреча",
+              "hypothesis": "был+а"
+            }
+          ],
+          "after_omographs": [
+            "это",
+            "был+а",
+            "тёплая",
+            "встреча"
+          ],
+          "after_accent": [
+            "+это",
+            "был+а",
+            "т+ёплая",
+            "встр+еча"
+          ],
+          "rendered": "+это был+а т+ёплая встр+еча"
+        }
+      ],
+      "rendered_join": "+это был+а т+ёплая встр+еча",
+      "final": "+это был+а т+ёплая встр+еча",
+      "final_matches_join": true
+    },
+    {
+      "input": "квазиблагоприятный",
+      "normalized": "квазиблагоприятный",
+      "sentences": [
+        "квазиблагоприятный"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "квазиблагоприятный",
+          "words": [
+            "квазиблагоприятный"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "квазиблагоприятный",
+              "entity": "STRESS",
+              "score": 0.998857
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "квазиблагоприятный"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "квазиблагоприятный"
+          ],
+          "after_accent": [
+            "квазиблагопри+ятный"
+          ],
+          "rendered": "квазиблагопри+ятный"
+        }
+      ],
+      "rendered_join": "квазиблагопри+ятный",
+      "final": "квазиблагопри+ятный",
+      "final_matches_join": true
+    },
+    {
+      "input": "гиперинтенсификация",
+      "normalized": "гиперинтенсификация",
+      "sentences": [
+        "гиперинтенсификация"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "гиперинтенсификация",
+          "words": [
+            "гиперинтенсификация"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "гиперинтенсификация",
+              "entity": "STRESS",
+              "score": 0.998926
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "гиперинтенсификация"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "гиперинтенсификация"
+          ],
+          "after_accent": [
+            "гиперинтенсифик+ация"
+          ],
+          "rendered": "гиперинтенсифик+ация"
+        }
+      ],
+      "rendered_join": "гиперинтенсифик+ация",
+      "final": "гиперинтенсифик+ация",
+      "final_matches_join": true
+    },
+    {
+      "input": "монокристаллический",
+      "normalized": "монокристаллический",
+      "sentences": [
+        "монокристаллический"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "монокристаллический",
+          "words": [
+            "монокристаллический"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "монокристаллический",
+              "entity": "STRESS",
+              "score": 0.999326
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "монокристаллический"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "монокристаллический"
+          ],
+          "after_accent": [
+            "монокристалл+ический"
+          ],
+          "rendered": "монокристалл+ический"
+        }
+      ],
+      "rendered_join": "монокристалл+ический",
+      "final": "монокристалл+ический",
+      "final_matches_join": true
+    },
+    {
+      "input": "флибустьерствующий",
+      "normalized": "флибустьерствующий",
+      "sentences": [
+        "флибустьерствующий"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "флибустьерствующий",
+          "words": [
+            "флибустьерствующий"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "флибустьерствующий",
+              "entity": "STRESS",
+              "score": 0.999211
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "флибустьерствующий"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "флибустьерствующий"
+          ],
+          "after_accent": [
+            "флибусть+ерствующий"
+          ],
+          "rendered": "флибусть+ерствующий"
+        }
+      ],
+      "rendered_join": "флибусть+ерствующий",
+      "final": "флибусть+ерствующий",
+      "final_matches_join": true
+    },
+    {
+      "input": "я и ты пошли в кино",
+      "normalized": "я и ты пошли в кино",
+      "sentences": [
+        "я и ты пошли в кино"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "я и ты пошли в кино",
+          "words": [
+            "я",
+            "и",
+            "ты",
+            "пошли",
+            "в",
+            "кино"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "я",
+              "entity": "STRESS",
+              "score": 0.976052
+            },
+            {
+              "word": "и",
+              "entity": "NO_STRESS",
+              "score": 0.985119
+            },
+            {
+              "word": "ты",
+              "entity": "STRESS",
+              "score": 0.984378
+            },
+            {
+              "word": "пошли",
+              "entity": "STRESS",
+              "score": 0.999
+            },
+            {
+              "word": "в",
+              "entity": "NO_STRESS",
+              "score": 0.999862
+            },
+            {
+              "word": "кино",
+              "entity": "STRESS",
+              "score": 0.995945
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "я",
+            "и",
+            "ты",
+            "пошли",
+            "в",
+            "кино"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "я",
+            "и",
+            "ты",
+            "пошли",
+            "в",
+            "кино"
+          ],
+          "after_accent": [
+            "я",
+            "и",
+            "т+ы",
+            "пошл+и",
+            "в",
+            "кин+о"
+          ],
+          "rendered": "я и т+ы пошл+и в кин+о"
+        }
+      ],
+      "rendered_join": "я и т+ы пошл+и в кин+о",
+      "final": "я и т+ы пошл+и в кин+о",
+      "final_matches_join": true
+    },
+    {
+      "input": "он не был там вчера",
+      "normalized": "он не был там вчера",
+      "sentences": [
+        "он не был там вчера"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "он не был там вчера",
+          "words": [
+            "он",
+            "не",
+            "был",
+            "там",
+            "вчера"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "он",
+              "entity": "STRESS",
+              "score": 0.874791
+            },
+            {
+              "word": "не",
+              "entity": "STRESS",
+              "score": 0.964614
+            },
+            {
+              "word": "был",
+              "entity": "NO_STRESS",
+              "score": 0.899273
+            },
+            {
+              "word": "там",
+              "entity": "STRESS",
+              "score": 0.639493
+            },
+            {
+              "word": "вчера",
+              "entity": "STRESS",
+              "score": 0.994284
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "он",
+            "не",
+            "был",
+            "там",
+            "вчера"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "он",
+            "не",
+            "был",
+            "там",
+            "вчера"
+          ],
+          "after_accent": [
+            "+он",
+            "н+е",
+            "был",
+            "т+ам",
+            "вчер+а"
+          ],
+          "rendered": "+он н+е был т+ам вчер+а"
+        }
+      ],
+      "rendered_join": "+он н+е был т+ам вчер+а",
+      "final": "+он н+е был т+ам вчер+а",
+      "final_matches_join": true
+    },
+    {
+      "input": "что бы это значило",
+      "normalized": "что бы это значило",
+      "sentences": [
+        "что бы это значило"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "что бы это значило",
+          "words": [
+            "что",
+            "бы",
+            "это",
+            "значило"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "что",
+              "entity": "STRESS",
+              "score": 0.95465
+            },
+            {
+              "word": "бы",
+              "entity": "NO_STRESS",
+              "score": 0.987186
+            },
+            {
+              "word": "это",
+              "entity": "STRESS",
+              "score": 0.985022
+            },
+            {
+              "word": "значило",
+              "entity": "STRESS",
+              "score": 0.999368
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "что",
+            "бы",
+            "это",
+            "значило"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "что",
+            "бы",
+            "это",
+            "значило"
+          ],
+          "after_accent": [
+            "чт+о",
+            "бы",
+            "+это",
+            "зн+ачило"
+          ],
+          "rendered": "чт+о бы +это зн+ачило"
+        }
+      ],
+      "rendered_join": "чт+о бы +это зн+ачило",
+      "final": "чт+о бы +это зн+ачило",
+      "final_matches_join": true
+    },
+    {
+      "input": "кот сидит на столе у окна",
+      "normalized": "кот сидит на столе у окна",
+      "sentences": [
+        "кот сидит на столе у окна"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "кот сидит на столе у окна",
+          "words": [
+            "кот",
+            "сидит",
+            "на",
+            "столе",
+            "у",
+            "окна"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "кот",
+              "entity": "NO_STRESS",
+              "score": 0.792526
+            },
+            {
+              "word": "сидит",
+              "entity": "STRESS",
+              "score": 0.989051
+            },
+            {
+              "word": "на",
+              "entity": "NO_STRESS",
+              "score": 0.97317
+            },
+            {
+              "word": "столе",
+              "entity": "STRESS",
+              "score": 0.99235
+            },
+            {
+              "word": "у",
+              "entity": "NO_STRESS",
+              "score": 0.940503
+            },
+            {
+              "word": "окна",
+              "entity": "STRESS",
+              "score": 0.983406
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "кот",
+            "сидит",
+            "на",
+            "столе",
+            "у",
+            "окна"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 5,
+              "word": "окна",
+              "variants": [
+                "+окна",
+                "окн+а"
+              ],
+              "marked_text": "кот сидит на столе у <w>окна</w> ",
+              "hypothesis": "+окна"
+            },
+            {
+              "position": 5,
+              "word": "окна",
+              "variants": [
+                "+окна",
+                "окн+а"
+              ],
+              "marked_text": "кот сидит на столе у <w>окна</w> ",
+              "hypothesis": "окн+а"
+            }
+          ],
+          "after_omographs": [
+            "кот",
+            "сидит",
+            "на",
+            "столе",
+            "у",
+            "окн+а"
+          ],
+          "after_accent": [
+            "кот",
+            "сид+ит",
+            "на",
+            "стол+е",
+            "у",
+            "окн+а"
+          ],
+          "rendered": "кот сид+ит на стол+е у окн+а"
+        }
+      ],
+      "rendered_join": "кот сид+ит на стол+е у окн+а",
+      "final": "кот сид+ит на стол+е у окн+а",
+      "final_matches_join": true
+    },
+    {
+      "input": "Привет! Как дела? Всё хорошо.",
+      "normalized": "Привет! Как дела? Всё хорошо.",
+      "sentences": [
+        "Привет!",
+        " Как дела?",
+        " Всё хорошо."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Привет!",
+          "words": [
+            "Привет",
+            "!"
+          ],
+          "remaining_text": [
+            "",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Привет",
+              "entity": "STRESS",
+              "score": 0.999278
+            },
+            {
+              "word": "!",
+              "entity": "PUNCT",
+              "score": 1.0
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Привет",
+            "!"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Привет",
+            "!"
+          ],
+          "after_accent": [
+            "Прив+ет",
+            "!"
+          ],
+          "rendered": "Прив+ет!"
+        },
+        {
+          "sentence": " Как дела?",
+          "words": [
+            "Как",
+            "дела",
+            "?"
+          ],
+          "remaining_text": [
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Как",
+              "entity": "STRESS",
+              "score": 0.772497
+            },
+            {
+              "word": "дела",
+              "entity": "STRESS",
+              "score": 0.9969
+            },
+            {
+              "word": "?",
+              "entity": "PUNCT",
+              "score": 0.999999
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Как",
+            "дела",
+            "?"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "дела",
+              "variants": [
+                "д+ела",
+                "дел+а"
+              ],
+              "marked_text": "Как <w>дела</w> ?",
+              "hypothesis": "д+ела"
+            },
+            {
+              "position": 1,
+              "word": "дела",
+              "variants": [
+                "д+ела",
+                "дел+а"
+              ],
+              "marked_text": "Как <w>дела</w> ?",
+              "hypothesis": "дел+а"
+            }
+          ],
+          "after_omographs": [
+            "Как",
+            "дел+а",
+            "?"
+          ],
+          "after_accent": [
+            "К+ак",
+            "дел+а",
+            "?"
+          ],
+          "rendered": " К+ак дел+а?"
+        },
+        {
+          "sentence": " Всё хорошо.",
+          "words": [
+            "Всё",
+            "хорошо",
+            "."
+          ],
+          "remaining_text": [
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Всё",
+              "entity": "STRESS",
+              "score": 0.827334
+            },
+            {
+              "word": "хорошо",
+              "entity": "STRESS",
+              "score": 0.99962
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 1.0
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Всё",
+            "хорошо",
+            "."
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Всё",
+            "хорошо",
+            "."
+          ],
+          "after_accent": [
+            "Вс+ё",
+            "хорош+о",
+            "."
+          ],
+          "rendered": " Вс+ё хорош+о."
+        }
+      ],
+      "rendered_join": "Прив+ет! К+ак дел+а? Вс+ё хорош+о.",
+      "final": "Прив+ет! К+ак дел+а? Вс+ё хорош+о.",
+      "final_matches_join": true
+    },
+    {
+      "input": "Мама мыла раму, а папа читал газету.",
+      "normalized": "Мама мыла раму, а папа читал газету.",
+      "sentences": [
+        "Мама мыла раму, а папа читал газету."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Мама мыла раму, а папа читал газету.",
+          "words": [
+            "Мама",
+            "мыла",
+            "раму",
+            ",",
+            "а",
+            "папа",
+            "читал",
+            "газету",
+            "."
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Мама",
+              "entity": "STRESS",
+              "score": 0.817438
+            },
+            {
+              "word": "мыла",
+              "entity": "STRESS",
+              "score": 0.97508
+            },
+            {
+              "word": "раму",
+              "entity": "STRESS",
+              "score": 0.986937
+            },
+            {
+              "word": ",",
+              "entity": "PUNCT",
+              "score": 0.999999
+            },
+            {
+              "word": "а",
+              "entity": "NO_STRESS",
+              "score": 0.92411
+            },
+            {
+              "word": "папа",
+              "entity": "STRESS",
+              "score": 0.994302
+            },
+            {
+              "word": "читал",
+              "entity": "STRESS",
+              "score": 0.994197
+            },
+            {
+              "word": "газету",
+              "entity": "STRESS",
+              "score": 0.995481
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 1.0
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Мама",
+            "мыла",
+            "раму",
+            ",",
+            "а",
+            "папа",
+            "читал",
+            "газету",
+            "."
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "мыла",
+              "variants": [
+                "м+ыла",
+                "мыл+а"
+              ],
+              "marked_text": "Мама <w>мыла</w>  раму, а папа читал газету.",
+              "hypothesis": "м+ыла"
+            },
+            {
+              "position": 1,
+              "word": "мыла",
+              "variants": [
+                "м+ыла",
+                "мыл+а"
+              ],
+              "marked_text": "Мама <w>мыла</w>  раму, а папа читал газету.",
+              "hypothesis": "мыл+а"
+            }
+          ],
+          "after_omographs": [
+            "Мама",
+            "м+ыла",
+            "раму",
+            ",",
+            "а",
+            "папа",
+            "читал",
+            "газету",
+            "."
+          ],
+          "after_accent": [
+            "М+ама",
+            "м+ыла",
+            "р+аму",
+            ",",
+            "а",
+            "п+апа",
+            "чит+ал",
+            "газ+ету",
+            "."
+          ],
+          "rendered": "М+ама м+ыла р+аму, а п+апа чит+ал газ+ету."
+        }
+      ],
+      "rendered_join": "М+ама м+ыла р+аму, а п+апа чит+ал газ+ету.",
+      "final": "М+ама м+ыла р+аму, а п+апа чит+ал газ+ету.",
+      "final_matches_join": true
+    },
+    {
+      "input": "В 2024 году, в марте, выпал снег.",
+      "normalized": "В 2024 году, в марте, выпал снег.",
+      "sentences": [
+        "В 2024 году, в марте, выпал снег."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "В 2024 году, в марте, выпал снег.",
+          "words": [
+            "В",
+            "2024",
+            "году",
+            ",",
+            "в",
+            "марте",
+            ",",
+            "выпал",
+            "снег",
+            "."
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            "",
+            " ",
+            " ",
+            "",
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "В",
+              "entity": "NO_STRESS",
+              "score": 0.998389
+            },
+            {
+              "word": "2024",
+              "entity": "NO_STRESS",
+              "score": 0.576635
+            },
+            {
+              "word": "году",
+              "entity": "STRESS",
+              "score": 0.990563
+            },
+            {
+              "word": ",",
+              "entity": "PUNCT",
+              "score": 0.999999
+            },
+            {
+              "word": "в",
+              "entity": "NO_STRESS",
+              "score": 0.999913
+            },
+            {
+              "word": "марте",
+              "entity": "STRESS",
+              "score": 0.991707
+            },
+            {
+              "word": ",",
+              "entity": "PUNCT",
+              "score": 0.999999
+            },
+            {
+              "word": "выпал",
+              "entity": "STRESS",
+              "score": 0.991514
+            },
+            {
+              "word": "снег",
+              "entity": "STRESS",
+              "score": 0.971958
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 1.0
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "STRESS",
+            "PUNCT",
+            "STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "В",
+            "2024",
+            "году",
+            ",",
+            "в",
+            "марте",
+            ",",
+            "выпал",
+            "снег",
+            "."
+          ],
+          "omograph_pairs": [
+            {
+              "position": 2,
+              "word": "году",
+              "variants": [
+                "г+оду",
+                "год+у"
+              ],
+              "marked_text": "В 2024 <w>году</w> , в марте, выпал снег.",
+              "hypothesis": "г+оду"
+            },
+            {
+              "position": 2,
+              "word": "году",
+              "variants": [
+                "г+оду",
+                "год+у"
+              ],
+              "marked_text": "В 2024 <w>году</w> , в марте, выпал снег.",
+              "hypothesis": "год+у"
+            }
+          ],
+          "after_omographs": [
+            "В",
+            "2024",
+            "год+у",
+            ",",
+            "в",
+            "марте",
+            ",",
+            "выпал",
+            "снег",
+            "."
+          ],
+          "after_accent": [
+            "В",
+            "2024",
+            "год+у",
+            ",",
+            "в",
+            "м+арте",
+            ",",
+            "в+ыпал",
+            "сн+ег",
+            "."
+          ],
+          "rendered": "В 2024 год+у, в м+арте, в+ыпал сн+ег."
+        }
+      ],
+      "rendered_join": "В 2024 год+у, в м+арте, в+ыпал сн+ег.",
+      "final": "В 2024 год+у, в м+арте, в+ыпал сн+ег.",
+      "final_matches_join": true
+    },
+    {
+      "input": "Доктор И. И. Иванов пришёл на работу.",
+      "normalized": "Доктор И. И. Иванов пришёл на работу.",
+      "sentences": [
+        "Доктор И. И. Иванов пришёл на работу."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Доктор И. И. Иванов пришёл на работу.",
+          "words": [
+            "Доктор",
+            "И",
+            ".",
+            "И",
+            ".",
+            "Иванов",
+            "пришёл",
+            "на",
+            "работу",
+            "."
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            "",
+            " ",
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Доктор",
+              "entity": "STRESS",
+              "score": 0.996739
+            },
+            {
+              "word": "И",
+              "entity": "NO_STRESS",
+              "score": 0.907283
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.992149
+            },
+            {
+              "word": "И",
+              "entity": "NO_STRESS",
+              "score": 0.888628
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.996337
+            },
+            {
+              "word": "Иванов",
+              "entity": "STRESS",
+              "score": 0.969808
+            },
+            {
+              "word": "пришёл",
+              "entity": "NO_STRESS",
+              "score": 0.997832
+            },
+            {
+              "word": "на",
+              "entity": "NO_STRESS",
+              "score": 0.987129
+            },
+            {
+              "word": "работу",
+              "entity": "STRESS",
+              "score": 0.999589
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.999999
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "NO_STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "PUNCT",
+            "STRESS",
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Доктор",
+            "И",
+            ".",
+            "И",
+            ".",
+            "Иванов",
+            "пришёл",
+            "на",
+            "работу",
+            "."
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Доктор",
+            "И",
+            ".",
+            "И",
+            ".",
+            "Иванов",
+            "пришёл",
+            "на",
+            "работу",
+            "."
+          ],
+          "after_accent": [
+            "Д+октор",
+            "И",
+            ".",
+            "И",
+            ".",
+            "Иван+ов",
+            "пришёл",
+            "на",
+            "раб+оту",
+            "."
+          ],
+          "rendered": "Д+октор И. И. Иван+ов пришёл на раб+оту."
+        }
+      ],
+      "rendered_join": "Д+октор И. И. Иван+ов пришёл на раб+оту.",
+      "final": "Д+октор И. И. Иван+ов пришёл на раб+оту.",
+      "final_matches_join": true
+    },
+    {
+      "input": "",
+      "normalized": "",
+      "sentences": [
+        ""
+      ],
+      "per_sentence": [
+        {
+          "sentence": "",
+          "words": [],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "empty_words": true,
+          "stress_usages": [],
+          "after_yo": [],
+          "after_omographs": [],
+          "after_accent": [],
+          "omograph_pairs": [],
+          "rendered": ""
+        }
+      ],
+      "rendered_join": "",
+      "final": "",
+      "final_matches_join": true
+    },
+    {
+      "input": "...",
+      "normalized": "...",
+      "sentences": [
+        "..."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "...",
+          "words": [
+            "..."
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": ".",
+              "entity": "NO_STRESS",
+              "score": 0.999701
+            },
+            {
+              "word": ".",
+              "entity": "NO_STRESS",
+              "score": 0.999843
+            },
+            {
+              "word": ".",
+              "entity": "NO_STRESS",
+              "score": 0.999353
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "NO_STRESS",
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "..."
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "..."
+          ],
+          "after_accent": [
+            "..."
+          ],
+          "rendered": "..."
+        }
+      ],
+      "rendered_join": "...",
+      "final": "...",
+      "final_matches_join": true
+    },
+    {
+      "input": "123",
+      "normalized": "123",
+      "sentences": [
+        "123"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "123",
+          "words": [
+            "123"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "123",
+              "entity": "NO_STRESS",
+              "score": 0.993855
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "123"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "123"
+          ],
+          "after_accent": [
+            "123"
+          ],
+          "rendered": "123"
+        }
+      ],
+      "rendered_join": "123",
+      "final": "123",
+      "final_matches_join": true
+    },
+    {
+      "input": "abc",
+      "normalized": "abc",
+      "sentences": [
+        "abc"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "abc",
+          "words": [
+            "abc"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "abc",
+              "entity": "NO_STRESS",
+              "score": 0.712347
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "abc"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "abc"
+          ],
+          "after_accent": [
+            "abc"
+          ],
+          "rendered": "abc"
+        }
+      ],
+      "rendered_join": "abc",
+      "final": "abc",
+      "final_matches_join": true
+    },
+    {
+      "input": "кот",
+      "normalized": "кот",
+      "sentences": [
+        "кот"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "кот",
+          "words": [
+            "кот"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "кот",
+              "entity": "STRESS",
+              "score": 0.993604
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "кот"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "кот"
+          ],
+          "after_accent": [
+            "к+от"
+          ],
+          "rendered": "к+от"
+        }
+      ],
+      "rendered_join": "к+от",
+      "final": "к+от",
+      "final_matches_join": true
+    },
+    {
+      "input": "Россия",
+      "normalized": "Россия",
+      "sentences": [
+        "Россия"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Россия",
+          "words": [
+            "Россия"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Россия",
+              "entity": "STRESS",
+              "score": 0.999285
+            }
+          ],
+          "stress_usages": [
+            "STRESS"
+          ],
+          "after_yo": [
+            "Россия"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Россия"
+          ],
+          "after_accent": [
+            "Росс+ия"
+          ],
+          "rendered": "Росс+ия"
+        }
+      ],
+      "rendered_join": "Росс+ия",
+      "final": "Росс+ия",
+      "final_matches_join": true
+    },
+    {
+      "input": "Кто-то пришёл, и всё-таки ушёл.",
+      "normalized": "Кто-то пришёл, и всё-таки ушёл.",
+      "sentences": [
+        "Кто-то пришёл, и всё-таки ушёл."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Кто-то пришёл, и всё-таки ушёл.",
+          "words": [
+            "Кто",
+            "-",
+            "то",
+            "пришёл",
+            ",",
+            "и",
+            "всё",
+            "-",
+            "таки",
+            "ушёл",
+            "."
+          ],
+          "remaining_text": [
+            "",
+            "",
+            "",
+            " ",
+            "",
+            " ",
+            " ",
+            "",
+            "",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Кто",
+              "entity": "STRESS",
+              "score": 0.990909
+            },
+            {
+              "word": "-",
+              "entity": "PUNCT",
+              "score": 0.999994
+            },
+            {
+              "word": "то",
+              "entity": "NO_STRESS",
+              "score": 0.975855
+            },
+            {
+              "word": "пришёл",
+              "entity": "NO_STRESS",
+              "score": 0.970846
+            },
+            {
+              "word": ",",
+              "entity": "PUNCT",
+              "score": 0.999998
+            },
+            {
+              "word": "и",
+              "entity": "NO_STRESS",
+              "score": 0.894289
+            },
+            {
+              "word": "всё",
+              "entity": "NO_STRESS",
+              "score": 0.974107
+            },
+            {
+              "word": "-",
+              "entity": "PUNCT",
+              "score": 0.99965
+            },
+            {
+              "word": "таки",
+              "entity": "NO_STRESS",
+              "score": 0.955141
+            },
+            {
+              "word": "ушёл",
+              "entity": "NO_STRESS",
+              "score": 0.984513
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.999999
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "NO_STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "NO_STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "NO_STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Кто",
+            "-",
+            "то",
+            "пришёл",
+            ",",
+            "и",
+            "всё",
+            "-",
+            "таки",
+            "ушёл",
+            "."
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Кто",
+            "-",
+            "то",
+            "пришёл",
+            ",",
+            "и",
+            "всё",
+            "-",
+            "таки",
+            "ушёл",
+            "."
+          ],
+          "after_accent": [
+            "Кт+о",
+            "-",
+            "то",
+            "пришёл",
+            ",",
+            "и",
+            "всё",
+            "-",
+            "таки",
+            "ушёл",
+            "."
+          ],
+          "rendered": "Кт+о-то пришёл, и всё-таки ушёл."
+        }
+      ],
+      "rendered_join": "Кт+о-то пришёл, и всё-таки ушёл.",
+      "final": "Кт+о-то пришёл, и всё-таки ушёл.",
+      "final_matches_join": true
+    },
+    {
+      "input": "Это стоит 100 рублей и 50 копеек.",
+      "normalized": "Это стоит 100 рублей и 50 копеек.",
+      "sentences": [
+        "Это стоит 100 рублей и 50 копеек."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Это стоит 100 рублей и 50 копеек.",
+          "words": [
+            "Это",
+            "стоит",
+            "100",
+            "рублей",
+            "и",
+            "50",
+            "копеек",
+            "."
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Это",
+              "entity": "STRESS",
+              "score": 0.985578
+            },
+            {
+              "word": "стоит",
+              "entity": "STRESS",
+              "score": 0.997378
+            },
+            {
+              "word": "100",
+              "entity": "NO_STRESS",
+              "score": 0.999812
+            },
+            {
+              "word": "рублей",
+              "entity": "STRESS",
+              "score": 0.990062
+            },
+            {
+              "word": "и",
+              "entity": "NO_STRESS",
+              "score": 0.923991
+            },
+            {
+              "word": "50",
+              "entity": "NO_STRESS",
+              "score": 0.999679
+            },
+            {
+              "word": "копеек",
+              "entity": "STRESS",
+              "score": 0.997742
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.999999
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Это",
+            "стоит",
+            "100",
+            "рублей",
+            "и",
+            "50",
+            "копеек",
+            "."
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "стоит",
+              "variants": [
+                "ст+оит",
+                "сто+ит"
+              ],
+              "marked_text": "Это <w>стоит</w>  100 рублей и 50 копеек.",
+              "hypothesis": "ст+оит"
+            },
+            {
+              "position": 1,
+              "word": "стоит",
+              "variants": [
+                "ст+оит",
+                "сто+ит"
+              ],
+              "marked_text": "Это <w>стоит</w>  100 рублей и 50 копеек.",
+              "hypothesis": "сто+ит"
+            }
+          ],
+          "after_omographs": [
+            "Это",
+            "ст+оит",
+            "100",
+            "рублей",
+            "и",
+            "50",
+            "копеек",
+            "."
+          ],
+          "after_accent": [
+            "+Это",
+            "ст+оит",
+            "100",
+            "рубл+ей",
+            "и",
+            "50",
+            "коп+еек",
+            "."
+          ],
+          "rendered": "+Это ст+оит 100 рубл+ей и 50 коп+еек."
+        }
+      ],
+      "rendered_join": "+Это ст+оит 100 рубл+ей и 50 коп+еек.",
+      "final": "+Это ст+оит 100 рубл+ей и 50 коп+еек.",
+      "final_matches_join": true
+    },
+    {
+      "input": "Идём в кафе? Да, конечно!",
+      "normalized": "Идём в кафе? Да, конечно!",
+      "sentences": [
+        "Идём в кафе?",
+        " Да, конечно!"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Идём в кафе?",
+          "words": [
+            "Идём",
+            "в",
+            "кафе",
+            "?"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Идём",
+              "entity": "NO_STRESS",
+              "score": 0.993192
+            },
+            {
+              "word": "в",
+              "entity": "NO_STRESS",
+              "score": 0.999879
+            },
+            {
+              "word": "кафе",
+              "entity": "STRESS",
+              "score": 0.999262
+            },
+            {
+              "word": "?",
+              "entity": "PUNCT",
+              "score": 0.999999
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Идём",
+            "в",
+            "кафе",
+            "?"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Идём",
+            "в",
+            "кафе",
+            "?"
+          ],
+          "after_accent": [
+            "Идём",
+            "в",
+            "каф+е",
+            "?"
+          ],
+          "rendered": "Идём в каф+е?"
+        },
+        {
+          "sentence": " Да, конечно!",
+          "words": [
+            "Да",
+            ",",
+            "конечно",
+            "!"
+          ],
+          "remaining_text": [
+            " ",
+            "",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Да",
+              "entity": "STRESS",
+              "score": 0.81558
+            },
+            {
+              "word": ",",
+              "entity": "PUNCT",
+              "score": 0.999999
+            },
+            {
+              "word": "конечно",
+              "entity": "STRESS",
+              "score": 0.999537
+            },
+            {
+              "word": "!",
+              "entity": "PUNCT",
+              "score": 0.999999
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "PUNCT",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Да",
+            ",",
+            "конечно",
+            "!"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Да",
+            ",",
+            "конечно",
+            "!"
+          ],
+          "after_accent": [
+            "Д+а",
+            ",",
+            "кон+ечно",
+            "!"
+          ],
+          "rendered": " Д+а, кон+ечно!"
+        }
+      ],
+      "rendered_join": "Идём в каф+е? Д+а, кон+ечно!",
+      "final": "Идём в каф+е? Д+а, кон+ечно!",
+      "final_matches_join": true
+    },
+    {
+      "input": "по-русски говорил он чётко",
+      "normalized": "по-русски говорил он чётко",
+      "sentences": [
+        "по-русски говорил он чётко"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "по-русски говорил он чётко",
+          "words": [
+            "по",
+            "-",
+            "русски",
+            "говорил",
+            "он",
+            "чётко"
+          ],
+          "remaining_text": [
+            "",
+            "",
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "по",
+              "entity": "NO_STRESS",
+              "score": 0.993211
+            },
+            {
+              "word": "-",
+              "entity": "PUNCT",
+              "score": 0.999994
+            },
+            {
+              "word": "русски",
+              "entity": "STRESS",
+              "score": 0.989535
+            },
+            {
+              "word": "говорил",
+              "entity": "STRESS",
+              "score": 0.999699
+            },
+            {
+              "word": "он",
+              "entity": "STRESS",
+              "score": 0.895282
+            },
+            {
+              "word": "чётко",
+              "entity": "NO_STRESS",
+              "score": 0.998486
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "PUNCT",
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "по",
+            "-",
+            "русски",
+            "говорил",
+            "он",
+            "чётко"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "по",
+            "-",
+            "русски",
+            "говорил",
+            "он",
+            "чётко"
+          ],
+          "after_accent": [
+            "по",
+            "-",
+            "р+усски",
+            "говор+ил",
+            "+он",
+            "чётко"
+          ],
+          "rendered": "по-р+усски говор+ил +он чётко"
+        }
+      ],
+      "rendered_join": "по-р+усски говор+ил +он чётко",
+      "final": "по-р+усски говор+ил +он чётко",
+      "final_matches_join": true
+    },
+    {
+      "input": "т. е. так и есть",
+      "normalized": "т. е. так и есть",
+      "sentences": [
+        "т. е. так и есть"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "т. е. так и есть",
+          "words": [
+            "т",
+            ".",
+            "е",
+            ".",
+            "так",
+            "и",
+            "есть"
+          ],
+          "remaining_text": [
+            "",
+            "",
+            " ",
+            "",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "т",
+              "entity": "NO_STRESS",
+              "score": 0.998313
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.992477
+            },
+            {
+              "word": "е",
+              "entity": "NO_STRESS",
+              "score": 0.608099
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.999985
+            },
+            {
+              "word": "так",
+              "entity": "STRESS",
+              "score": 0.831031
+            },
+            {
+              "word": "и",
+              "entity": "NO_STRESS",
+              "score": 0.953523
+            },
+            {
+              "word": "есть",
+              "entity": "STRESS",
+              "score": 0.964223
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "PUNCT",
+            "NO_STRESS",
+            "PUNCT",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "т",
+            ".",
+            "е",
+            ".",
+            "так",
+            "и",
+            "есть"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "т",
+            ".",
+            "е",
+            ".",
+            "так",
+            "и",
+            "есть"
+          ],
+          "after_accent": [
+            "т",
+            ".",
+            "е",
+            ".",
+            "т+ак",
+            "и",
+            "+есть"
+          ],
+          "rendered": "т. е. т+ак и +есть"
+        }
+      ],
+      "rendered_join": "т. е. т+ак и +есть",
+      "final": "т. е. т+ак и +есть",
+      "final_matches_join": true
+    },
+    {
+      "input": "г. Москва — столица России",
+      "normalized": "г. Москва — столица России",
+      "sentences": [
+        "г. Москва — столица России"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "г. Москва — столица России",
+          "words": [
+            "г",
+            ".",
+            "Москва",
+            "—",
+            "столица",
+            "России"
+          ],
+          "remaining_text": [
+            "",
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "г",
+              "entity": "NO_STRESS",
+              "score": 0.999644
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 0.999986
+            },
+            {
+              "word": "Москва",
+              "entity": "STRESS",
+              "score": 0.993854
+            },
+            {
+              "word": "—",
+              "entity": "NO_STRESS",
+              "score": 0.999871
+            },
+            {
+              "word": "столица",
+              "entity": "STRESS",
+              "score": 0.999005
+            },
+            {
+              "word": "России",
+              "entity": "STRESS",
+              "score": 0.998545
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "PUNCT",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "г",
+            ".",
+            "Москва",
+            "—",
+            "столица",
+            "России"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "г",
+            ".",
+            "Москва",
+            "—",
+            "столица",
+            "России"
+          ],
+          "after_accent": [
+            "г",
+            ".",
+            "Москв+а",
+            "—",
+            "стол+ица",
+            "Росс+ии"
+          ],
+          "rendered": "г. Москв+а — стол+ица Росс+ии"
+        }
+      ],
+      "rendered_join": "г. Москв+а — стол+ица Росс+ии",
+      "final": "г. Москв+а — стол+ица Росс+ии",
+      "final_matches_join": true
+    },
+    {
+      "input": "она зам+ок повесила на дверь",
+      "normalized": "она замок повесила на дверь",
+      "sentences": [
+        "она замок повесила на дверь"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "она замок повесила на дверь",
+          "words": [
+            "она",
+            "замок",
+            "повесила",
+            "на",
+            "дверь"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "она",
+              "entity": "STRESS",
+              "score": 0.812259
+            },
+            {
+              "word": "замок",
+              "entity": "STRESS",
+              "score": 0.997532
+            },
+            {
+              "word": "повесила",
+              "entity": "STRESS",
+              "score": 0.999645
+            },
+            {
+              "word": "на",
+              "entity": "NO_STRESS",
+              "score": 0.949479
+            },
+            {
+              "word": "дверь",
+              "entity": "STRESS",
+              "score": 0.954443
+            }
+          ],
+          "stress_usages": [
+            "STRESS",
+            "STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "она",
+            "замок",
+            "повесила",
+            "на",
+            "дверь"
+          ],
+          "omograph_pairs": [
+            {
+              "position": 1,
+              "word": "замок",
+              "variants": [
+                "з+амок",
+                "зам+ок"
+              ],
+              "marked_text": "она <w>замок</w>  повесила на дверь",
+              "hypothesis": "з+амок"
+            },
+            {
+              "position": 1,
+              "word": "замок",
+              "variants": [
+                "з+амок",
+                "зам+ок"
+              ],
+              "marked_text": "она <w>замок</w>  повесила на дверь",
+              "hypothesis": "зам+ок"
+            }
+          ],
+          "after_omographs": [
+            "она",
+            "зам+ок",
+            "повесила",
+            "на",
+            "дверь"
+          ],
+          "after_accent": [
+            "он+а",
+            "зам+ок",
+            "пов+есила",
+            "на",
+            "дв+ерь"
+          ],
+          "rendered": "он+а зам+ок пов+есила на дв+ерь"
+        }
+      ],
+      "rendered_join": "он+а зам+ок пов+есила на дв+ерь",
+      "final": "он+а зам+ок пов+есила на дв+ерь",
+      "final_matches_join": true
+    },
+    {
+      "input": "Ёлка стояла в углу.",
+      "normalized": "Ёлка стояла в углу.",
+      "sentences": [
+        "Ёлка стояла в углу."
+      ],
+      "per_sentence": [
+        {
+          "sentence": "Ёлка стояла в углу.",
+          "words": [
+            "Ёлка",
+            "стояла",
+            "в",
+            "углу",
+            "."
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "Ёлка",
+              "entity": "NO_STRESS",
+              "score": 0.555809
+            },
+            {
+              "word": "стояла",
+              "entity": "STRESS",
+              "score": 0.999612
+            },
+            {
+              "word": "в",
+              "entity": "NO_STRESS",
+              "score": 0.999817
+            },
+            {
+              "word": "углу",
+              "entity": "STRESS",
+              "score": 0.99503
+            },
+            {
+              "word": ".",
+              "entity": "PUNCT",
+              "score": 1.0
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "PUNCT"
+          ],
+          "after_yo": [
+            "Ёлка",
+            "стояла",
+            "в",
+            "углу",
+            "."
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "Ёлка",
+            "стояла",
+            "в",
+            "углу",
+            "."
+          ],
+          "after_accent": [
+            "Ёлка",
+            "сто+яла",
+            "в",
+            "угл+у",
+            "."
+          ],
+          "rendered": "Ёлка сто+яла в угл+у."
+        }
+      ],
+      "rendered_join": "Ёлка сто+яла в угл+у.",
+      "final": "Ёлка сто+яла в угл+у.",
+      "final_matches_join": true
+    },
+    {
+      "input": "А и Б сидели на трубе",
+      "normalized": "А и Б сидели на трубе",
+      "sentences": [
+        "А и Б сидели на трубе"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "А и Б сидели на трубе",
+          "words": [
+            "А",
+            "и",
+            "Б",
+            "сидели",
+            "на",
+            "трубе"
+          ],
+          "remaining_text": [
+            "",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "А",
+              "entity": "NO_STRESS",
+              "score": 0.629234
+            },
+            {
+              "word": "и",
+              "entity": "NO_STRESS",
+              "score": 0.886641
+            },
+            {
+              "word": "Б",
+              "entity": "NO_STRESS",
+              "score": 0.572308
+            },
+            {
+              "word": "сидели",
+              "entity": "STRESS",
+              "score": 0.999202
+            },
+            {
+              "word": "на",
+              "entity": "NO_STRESS",
+              "score": 0.536796
+            },
+            {
+              "word": "трубе",
+              "entity": "STRESS",
+              "score": 0.997762
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS",
+            "NO_STRESS",
+            "NO_STRESS",
+            "STRESS",
+            "NO_STRESS",
+            "STRESS"
+          ],
+          "after_yo": [
+            "А",
+            "и",
+            "Б",
+            "сидели",
+            "на",
+            "трубе"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "А",
+            "и",
+            "Б",
+            "сидели",
+            "на",
+            "трубе"
+          ],
+          "after_accent": [
+            "А",
+            "и",
+            "Б",
+            "сид+ели",
+            "на",
+            "труб+е"
+          ],
+          "rendered": "А и Б сид+ели на труб+е"
+        }
+      ],
+      "rendered_join": "А и Б сид+ели на труб+е",
+      "final": "А и Б сид+ели на труб+е",
+      "final_matches_join": true
+    },
+    {
+      "input": "2+2=4",
+      "normalized": "224",
+      "sentences": [
+        "224"
+      ],
+      "per_sentence": [
+        {
+          "sentence": "224",
+          "words": [
+            "224"
+          ],
+          "remaining_text": [
+            "",
+            ""
+          ],
+          "stress_usages_full": [
+            {
+              "word": "224",
+              "entity": "NO_STRESS",
+              "score": 0.987158
+            }
+          ],
+          "stress_usages": [
+            "NO_STRESS"
+          ],
+          "after_yo": [
+            "224"
+          ],
+          "omograph_pairs": [],
+          "after_omographs": [
+            "224"
+          ],
+          "after_accent": [
+            "224"
+          ],
+          "rendered": "224"
+        }
+      ],
+      "rendered_join": "224",
+      "final": "224",
+      "final_matches_join": true
+    }
+  ],
+  "tokenizers": {
+    "M1_char": [
+      {
+        "word": "молоко",
+        "lower": "молоко",
+        "chars": [
+          "м",
+          "о",
+          "л",
+          "о",
+          "к",
+          "о"
+        ],
+        "tokens": [
+          "[bos]",
+          "м",
+          "о",
+          "л",
+          "о",
+          "к",
+          "о",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          24,
+          26,
+          23,
+          26,
+          22,
+          26,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "молоко"
+      },
+      {
+        "word": "квазиблагоприятный",
+        "lower": "квазиблагоприятный",
+        "chars": [
+          "к",
+          "в",
+          "а",
+          "з",
+          "и",
+          "б",
+          "л",
+          "а",
+          "г",
+          "о",
+          "п",
+          "р",
+          "и",
+          "я",
+          "т",
+          "н",
+          "ы",
+          "й"
+        ],
+        "tokens": [
+          "[bos]",
+          "к",
+          "в",
+          "а",
+          "з",
+          "и",
+          "б",
+          "л",
+          "а",
+          "г",
+          "о",
+          "п",
+          "р",
+          "и",
+          "я",
+          "т",
+          "н",
+          "ы",
+          "й",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          22,
+          14,
+          12,
+          19,
+          20,
+          13,
+          23,
+          12,
+          15,
+          26,
+          27,
+          28,
+          20,
+          43,
+          30,
+          25,
+          39,
+          21,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "квазиблагопри+ятный"
+      },
+      {
+        "word": "монокристаллический",
+        "lower": "монокристаллический",
+        "chars": [
+          "м",
+          "о",
+          "н",
+          "о",
+          "к",
+          "р",
+          "и",
+          "с",
+          "т",
+          "а",
+          "л",
+          "л",
+          "и",
+          "ч",
+          "е",
+          "с",
+          "к",
+          "и",
+          "й"
+        ],
+        "tokens": [
+          "[bos]",
+          "м",
+          "о",
+          "н",
+          "о",
+          "к",
+          "р",
+          "и",
+          "с",
+          "т",
+          "а",
+          "л",
+          "л",
+          "и",
+          "ч",
+          "е",
+          "с",
+          "к",
+          "и",
+          "й",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          24,
+          26,
+          25,
+          26,
+          22,
+          28,
+          20,
+          29,
+          30,
+          12,
+          23,
+          23,
+          20,
+          35,
+          17,
+          29,
+          22,
+          20,
+          21,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "монокристалл+ический"
+      },
+      {
+        "word": "переподготовка",
+        "lower": "переподготовка",
+        "chars": [
+          "п",
+          "е",
+          "р",
+          "е",
+          "п",
+          "о",
+          "д",
+          "г",
+          "о",
+          "т",
+          "о",
+          "в",
+          "к",
+          "а"
+        ],
+        "tokens": [
+          "[bos]",
+          "п",
+          "е",
+          "р",
+          "е",
+          "п",
+          "о",
+          "д",
+          "г",
+          "о",
+          "т",
+          "о",
+          "в",
+          "к",
+          "а",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          27,
+          17,
+          28,
+          17,
+          27,
+          26,
+          16,
+          15,
+          26,
+          30,
+          26,
+          14,
+          22,
+          12,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "переподгот+овка"
+      },
+      {
+        "word": "флибустьерствующий",
+        "lower": "флибустьерствующий",
+        "chars": [
+          "ф",
+          "л",
+          "и",
+          "б",
+          "у",
+          "с",
+          "т",
+          "ь",
+          "е",
+          "р",
+          "с",
+          "т",
+          "в",
+          "у",
+          "ю",
+          "щ",
+          "и",
+          "й"
+        ],
+        "tokens": [
+          "[bos]",
+          "ф",
+          "л",
+          "и",
+          "б",
+          "у",
+          "с",
+          "т",
+          "ь",
+          "е",
+          "р",
+          "с",
+          "т",
+          "в",
+          "у",
+          "ю",
+          "щ",
+          "и",
+          "й",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          32,
+          23,
+          20,
+          13,
+          31,
+          29,
+          30,
+          40,
+          17,
+          28,
+          29,
+          30,
+          14,
+          31,
+          42,
+          37,
+          20,
+          21,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "флибусть+ерствующий"
+      },
+      {
+        "word": "кот",
+        "lower": "кот",
+        "chars": [
+          "к",
+          "о",
+          "т"
+        ],
+        "tokens": [
+          "[bos]",
+          "к",
+          "о",
+          "т",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          22,
+          26,
+          30,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "к+от"
+      },
+      {
+        "word": "ёжик",
+        "lower": "ёжик",
+        "chars": [
+          "ё",
+          "ж",
+          "и",
+          "к"
+        ],
+        "tokens": [
+          "[bos]",
+          "ё",
+          "ж",
+          "и",
+          "к",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          44,
+          18,
+          20,
+          22,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "+ёжик"
+      },
+      {
+        "word": "тёплый",
+        "lower": "тёплый",
+        "chars": [
+          "т",
+          "ё",
+          "п",
+          "л",
+          "ы",
+          "й"
+        ],
+        "tokens": [
+          "[bos]",
+          "т",
+          "ё",
+          "п",
+          "л",
+          "ы",
+          "й",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          30,
+          44,
+          27,
+          23,
+          39,
+          21,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "т+ёплый"
+      },
+      {
+        "word": "россия",
+        "lower": "россия",
+        "chars": [
+          "р",
+          "о",
+          "с",
+          "с",
+          "и",
+          "я"
+        ],
+        "tokens": [
+          "[bos]",
+          "р",
+          "о",
+          "с",
+          "с",
+          "и",
+          "я",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          28,
+          26,
+          29,
+          29,
+          20,
+          43,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "р+оссия"
+      },
+      {
+        "word": "абвгд",
+        "lower": "абвгд",
+        "chars": [
+          "а",
+          "б",
+          "в",
+          "г",
+          "д"
+        ],
+        "tokens": [
+          "[bos]",
+          "а",
+          "б",
+          "в",
+          "г",
+          "д",
+          "[eos]"
+        ],
+        "input_ids": [
+          2,
+          12,
+          13,
+          14,
+          15,
+          16,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "token_type_ids": null,
+        "bos_token": "[bos]",
+        "bos_token_id": 2,
+        "eos_token": "[eos]",
+        "eos_token_id": 3,
+        "unk_token": "[unk]",
+        "unk_token_id": 1,
+        "pad_token": "[pad]",
+        "pad_token_id": 0,
+        "put_accent": "+абвгд"
+      }
+    ],
+    "M3_wordpiece": [
+      {
+        "text": "на двери висит замок",
+        "tokens": [
+          "[CLS]",
+          "на",
+          "двери",
+          "висит",
+          "замок",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          548,
+          31629,
+          56517,
+          15006,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            9,
+            14
+          ],
+          [
+            15,
+            20
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "на",
+            "entity": "NO_STRESS",
+            "score": 0.94646,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "word": "двери",
+            "entity": "STRESS",
+            "score": 0.998082,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "word": "висит",
+            "entity": "STRESS",
+            "score": 0.981155,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "word": "замок",
+            "entity": "STRESS",
+            "score": 0.882112,
+            "start": 15,
+            "end": 20
+          }
+        ]
+      },
+      {
+        "text": "она все еще здесь",
+        "tokens": [
+          "[CLS]",
+          "она",
+          "все",
+          "еще",
+          "здесь",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          2904,
+          2749,
+          21523,
+          8638,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "она",
+            "entity": "STRESS",
+            "score": 0.845167,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "word": "все",
+            "entity": "NO_STRESS",
+            "score": 0.54156,
+            "start": 4,
+            "end": 7
+          },
+          {
+            "word": "еще",
+            "entity": "STRESS",
+            "score": 0.804972,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "word": "здесь",
+            "entity": "STRESS",
+            "score": 0.716866,
+            "start": 12,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "мама мыла раму а папа читал газету",
+        "tokens": [
+          "[CLS]",
+          "мама",
+          "мыла",
+          "рам",
+          "##у",
+          "а",
+          "папа",
+          "читал",
+          "газету",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          32344,
+          72500,
+          32774,
+          644,
+          312,
+          18452,
+          35775,
+          45845,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            21
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            28,
+            34
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "мама",
+            "entity": "STRESS",
+            "score": 0.961857,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "word": "мыла",
+            "entity": "STRESS",
+            "score": 0.996393,
+            "start": 5,
+            "end": 9
+          },
+          {
+            "word": "раму",
+            "entity": "STRESS",
+            "score": 0.995661,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "word": "а",
+            "entity": "NO_STRESS",
+            "score": 0.985894,
+            "start": 15,
+            "end": 16
+          },
+          {
+            "word": "папа",
+            "entity": "STRESS",
+            "score": 0.998626,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "word": "читал",
+            "entity": "STRESS",
+            "score": 0.998175,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "word": "газету",
+            "entity": "STRESS",
+            "score": 0.999411,
+            "start": 28,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "привет",
+        "tokens": [
+          "[CLS]",
+          "привет",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          32840,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "привет",
+            "entity": "STRESS",
+            "score": 0.999504,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "ёжик нашёл гриб",
+        "tokens": [
+          "[CLS]",
+          "ё",
+          "##жик",
+          "нашёл",
+          "гриб",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          345,
+          52675,
+          38595,
+          57486,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            11,
+            15
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "ёжик",
+            "entity": "NO_STRESS",
+            "score": 0.982897,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "word": "нашёл",
+            "entity": "NO_STRESS",
+            "score": 0.989003,
+            "start": 5,
+            "end": 10
+          },
+          {
+            "word": "гриб",
+            "entity": "STRESS",
+            "score": 0.982154,
+            "start": 11,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "text": "в 2024 году выпал снег",
+        "tokens": [
+          "[CLS]",
+          "в",
+          "2024",
+          "году",
+          "выпал",
+          "снег",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          314,
+          41449,
+          860,
+          55876,
+          34259,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "в",
+            "entity": "NO_STRESS",
+            "score": 0.999866,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "word": "2024",
+            "entity": "NO_STRESS",
+            "score": 0.697304,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "word": "году",
+            "entity": "STRESS",
+            "score": 0.947645,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "word": "выпал",
+            "entity": "STRESS",
+            "score": 0.667609,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "word": "снег",
+            "entity": "STRESS",
+            "score": 0.842711,
+            "start": 18,
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "hello world",
+        "tokens": [
+          "[CLS]",
+          "hell",
+          "##o",
+          "world",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          18889,
+          559,
+          1419,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "hello",
+            "entity": "NO_STRESS",
+            "score": 0.999097,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "word": "world",
+            "entity": "NO_STRESS",
+            "score": 0.998585,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "по-русски",
+        "tokens": [
+          "[CLS]",
+          "по",
+          "-",
+          "русски",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          705,
+          17,
+          54737,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "по",
+            "entity": "NO_STRESS",
+            "score": 0.983079,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "word": "-",
+            "entity": "PUNCT",
+            "score": 0.999996,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "word": "русски",
+            "entity": "STRESS",
+            "score": 0.994543,
+            "start": 3,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "квазиблагоприятный",
+        "tokens": [
+          "[CLS]",
+          "квази",
+          "##благ",
+          "##опри",
+          "##ят",
+          "##ный",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          61808,
+          31259,
+          81415,
+          2434,
+          1241,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "квазиблагоприятный",
+            "entity": "STRESS",
+            "score": 0.998857,
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "флибустьерствующий нечтоподобное",
+        "tokens": [
+          "[CLS]",
+          "фли",
+          "##бус",
+          "##тье",
+          "##рст",
+          "##вую",
+          "##щий",
+          "нечто",
+          "##подо",
+          "##бное",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          48191,
+          54096,
+          38468,
+          26641,
+          21604,
+          8620,
+          33634,
+          42200,
+          22718,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            19,
+            24
+          ],
+          [
+            24,
+            28
+          ],
+          [
+            28,
+            32
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "entities": [
+          {
+            "word": "флибустьерствующий",
+            "entity": "STRESS",
+            "score": 0.999265,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "word": "нечтоподобное",
+            "entity": "STRESS",
+            "score": 0.998595,
+            "start": 19,
+            "end": 32
+          }
+        ]
+      }
+    ],
+    "M4_wordpiece": [
+      {
+        "text": "на двери висит замок",
+        "tokens": [
+          "[CLS]",
+          "на",
+          "две",
+          "##ри",
+          "ви",
+          "##сит",
+          "замо",
+          "##к",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          389,
+          2160,
+          395,
+          556,
+          2289,
+          4700,
+          201,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            15,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "на",
+            "entity": "NO_YO",
+            "score": 0.999981,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "word": "двери",
+            "entity": "NO_YO",
+            "score": 0.999973,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "word": "висит",
+            "entity": "NO_YO",
+            "score": 0.999848,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "word": "замок",
+            "entity": "NO_YO",
+            "score": 0.999698,
+            "start": 15,
+            "end": 20
+          }
+        ]
+      },
+      {
+        "text": "она все еще здесь",
+        "tokens": [
+          "[CLS]",
+          "она",
+          "все",
+          "еще",
+          "здесь",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          739,
+          476,
+          699,
+          1206,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "она",
+            "entity": "NO_YO",
+            "score": 0.999949,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "word": "все",
+            "entity": "YO",
+            "score": 0.645326,
+            "start": 4,
+            "end": 7
+          },
+          {
+            "word": "еще",
+            "entity": "NO_YO",
+            "score": 0.99984,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "word": "здесь",
+            "entity": "NO_YO",
+            "score": 0.999962,
+            "start": 12,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "мама мыла раму а папа читал газету",
+        "tokens": [
+          "[CLS]",
+          "мама",
+          "мы",
+          "##ла",
+          "рам",
+          "##у",
+          "а",
+          "па",
+          "##па",
+          "читал",
+          "газ",
+          "##ет",
+          "##у",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          4126,
+          583,
+          398,
+          4278,
+          205,
+          7,
+          532,
+          477,
+          4729,
+          3512,
+          386,
+          205,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            19
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            28,
+            31
+          ],
+          [
+            31,
+            33
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "мама",
+            "entity": "NO_YO",
+            "score": 0.999962,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "word": "мыла",
+            "entity": "NO_YO",
+            "score": 0.999924,
+            "start": 5,
+            "end": 9
+          },
+          {
+            "word": "раму",
+            "entity": "NO_YO",
+            "score": 0.999966,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "word": "а",
+            "entity": "NO_YO",
+            "score": 0.999957,
+            "start": 15,
+            "end": 16
+          },
+          {
+            "word": "папа",
+            "entity": "NO_YO",
+            "score": 0.999924,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "word": "читал",
+            "entity": "NO_YO",
+            "score": 0.999952,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "word": "газету",
+            "entity": "NO_YO",
+            "score": 0.99997,
+            "start": 28,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "привет",
+        "tokens": [
+          "[CLS]",
+          "привет",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          4762,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "привет",
+            "entity": "NO_YO",
+            "score": 0.995678,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "ёжик нашёл гриб",
+        "tokens": [
+          "[CLS]",
+          "ё",
+          "##жи",
+          "##к",
+          "наш",
+          "##ёл",
+          "гри",
+          "##б",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          61,
+          463,
+          201,
+          1780,
+          2091,
+          4557,
+          211,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "ёжик",
+            "entity": "NO_YO",
+            "score": 0.99992,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "word": "нашёл",
+            "entity": "NO_YO",
+            "score": 0.999909,
+            "start": 5,
+            "end": 10
+          },
+          {
+            "word": "гриб",
+            "entity": "NO_YO",
+            "score": 0.999949,
+            "start": 11,
+            "end": 15
+          }
+        ]
+      },
+      {
+        "text": "в 2024 году выпал снег",
+        "tokens": [
+          "[CLS]",
+          "в",
+          "20",
+          "##2",
+          "##4",
+          "году",
+          "вы",
+          "##па",
+          "##л",
+          "сне",
+          "##г",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          13,
+          812,
+          254,
+          269,
+          1440,
+          441,
+          477,
+          200,
+          4256,
+          214,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "в",
+            "entity": "NO_YO",
+            "score": 0.999975,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "word": "2024",
+            "entity": "NO_YO",
+            "score": 0.999981,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "word": "году",
+            "entity": "NO_YO",
+            "score": 0.999966,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "word": "выпал",
+            "entity": "NO_YO",
+            "score": 0.999981,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "word": "снег",
+            "entity": "NO_YO",
+            "score": 0.999392,
+            "start": 18,
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "hello world",
+        "tokens": [
+          "[CLS]",
+          "h",
+          "##el",
+          "##lo",
+          "w",
+          "##or",
+          "##ld",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          78,
+          1434,
+          3962,
+          114,
+          1004,
+          4867,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "hello",
+            "entity": "NO_YO",
+            "score": 0.997262,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "word": "world",
+            "entity": "NO_YO",
+            "score": 0.98399,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "по-русски",
+        "tokens": [
+          "[CLS]",
+          "по",
+          "-",
+          "рус",
+          "##ски",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          384,
+          45,
+          1261,
+          488,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "по",
+            "entity": "NO_YO",
+            "score": 0.99887,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "word": "-",
+            "entity": "PUNCT",
+            "score": 0.998812,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "word": "русски",
+            "entity": "NO_YO",
+            "score": 0.999613,
+            "start": 3,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "квазиблагоприятный",
+        "tokens": [
+          "[CLS]",
+          "ква",
+          "##зи",
+          "##б",
+          "##лаго",
+          "##прия",
+          "##тный",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          1631,
+          554,
+          211,
+          1433,
+          3026,
+          2895,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "квазиблагоприятный",
+            "entity": "NO_YO",
+            "score": 0.999968,
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "флибустьерствующий нечтоподобное",
+        "tokens": [
+          "[CLS]",
+          "ф",
+          "##ли",
+          "##бу",
+          "##сть",
+          "##ер",
+          "##ствую",
+          "##щий",
+          "не",
+          "##что",
+          "##по",
+          "##доб",
+          "##ное",
+          "[SEP]"
+        ],
+        "input_ids": [
+          2,
+          40,
+          385,
+          651,
+          457,
+          404,
+          4306,
+          1781,
+          390,
+          2035,
+          450,
+          997,
+          692,
+          3
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "offset_mapping": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            21,
+            24
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            26,
+            29
+          ],
+          [
+            29,
+            32
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "special_tokens_mask": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "token_type_ids": null,
+        "entities": [
+          {
+            "word": "флибустьерствующий",
+            "entity": "NO_YO",
+            "score": 0.999972,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "word": "нечтоподобное",
+            "entity": "NO_YO",
+            "score": 0.99988,
+            "start": 19,
+            "end": 32
+          }
+        ]
+      }
+    ],
+    "M2_bpe": [
+      {
+        "source_sentence": "на двери висит замок",
+        "word": "двери",
+        "variants": [
+          "дв+ери",
+          "двер+и"
+        ],
+        "marked_text": "на <w>двери</w>  висит замок",
+        "preprocessed_text": "на <w>двери</w>  висит замок",
+        "hypothesis": "дв+ери",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "Ġ",
+          "<w>",
+          "Ð´Ð²Ðµ",
+          "ÑĢÐ¸",
+          "</w>",
+          "Ġ",
+          "ĠÐ²Ð¸ÑģÐ¸ÑĤ",
+          "ĠÐ·Ð°Ð¼Ð¾Ðº",
+          "</s>",
+          "</s>",
+          "дв+ери",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          225,
+          60256,
+          17415,
+          298,
+          60257,
+          225,
+          24559,
+          11796,
+          2,
+          2,
+          50424,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.002273,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на двери висит замок",
+        "word": "двери",
+        "variants": [
+          "дв+ери",
+          "двер+и"
+        ],
+        "marked_text": "на <w>двери</w>  висит замок",
+        "preprocessed_text": "на <w>двери</w>  висит замок",
+        "hypothesis": "двер+и",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "Ġ",
+          "<w>",
+          "Ð´Ð²Ðµ",
+          "ÑĢÐ¸",
+          "</w>",
+          "Ġ",
+          "ĠÐ²Ð¸ÑģÐ¸ÑĤ",
+          "ĠÐ·Ð°Ð¼Ð¾Ðº",
+          "</s>",
+          "</s>",
+          "двер+и",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          225,
+          60256,
+          17415,
+          298,
+          60257,
+          225,
+          24559,
+          11796,
+          2,
+          2,
+          50502,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.996607,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на двери висит замок",
+        "word": "замок",
+        "variants": [
+          "з+амок",
+          "зам+ок"
+        ],
+        "marked_text": "на двери висит <w>замок</w> ",
+        "preprocessed_text": "на двери висит <w>замок</w> ",
+        "hypothesis": "з+амок",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "ĠÐ´Ð²ÐµÑĢÐ¸",
+          "ĠÐ²Ð¸ÑģÐ¸ÑĤ",
+          "Ġ",
+          "<w>",
+          "Ð·Ð°",
+          "Ð¼Ð¾Ðº",
+          "</w>",
+          "Ġ",
+          "</s>",
+          "</s>",
+          "з+амок",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          4991,
+          24559,
+          225,
+          60256,
+          304,
+          4512,
+          60257,
+          225,
+          2,
+          2,
+          51981,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.040819,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на двери висит замок",
+        "word": "замок",
+        "variants": [
+          "з+амок",
+          "зам+ок"
+        ],
+        "marked_text": "на двери висит <w>замок</w> ",
+        "preprocessed_text": "на двери висит <w>замок</w> ",
+        "hypothesis": "зам+ок",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "ĠÐ´Ð²ÐµÑĢÐ¸",
+          "ĠÐ²Ð¸ÑģÐ¸ÑĤ",
+          "Ġ",
+          "<w>",
+          "Ð·Ð°",
+          "Ð¼Ð¾Ðº",
+          "</w>",
+          "Ġ",
+          "</s>",
+          "</s>",
+          "зам+ок",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          4991,
+          24559,
+          225,
+          60256,
+          304,
+          4512,
+          60257,
+          225,
+          2,
+          2,
+          51530,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.960168,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на горе стоит старинный замок",
+        "word": "горе",
+        "variants": [
+          "г+оре",
+          "гор+е"
+        ],
+        "marked_text": "на <w>горе</w>  стоит старинный замок",
+        "preprocessed_text": "на <w>горе</w>  стоит старинный замок",
+        "hypothesis": "г+оре",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "Ġ",
+          "<w>",
+          "Ð³Ð¾",
+          "ÑĢÐµ",
+          "</w>",
+          "Ġ",
+          "ĠÑģÑĤÐ¾Ð¸ÑĤ",
+          "ĠÑģÑĤÐ°ÑĢÐ¸Ð½",
+          "Ð½ÑĭÐ¹",
+          "ĠÐ·Ð°Ð¼Ð¾Ðº",
+          "</s>",
+          "</s>",
+          "г+оре",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          225,
+          60256,
+          730,
+          279,
+          60257,
+          225,
+          2418,
+          14065,
+          691,
+          11796,
+          2,
+          2,
+          52424,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.016154,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на горе стоит старинный замок",
+        "word": "горе",
+        "variants": [
+          "г+оре",
+          "гор+е"
+        ],
+        "marked_text": "на <w>горе</w>  стоит старинный замок",
+        "preprocessed_text": "на <w>горе</w>  стоит старинный замок",
+        "hypothesis": "гор+е",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "Ġ",
+          "<w>",
+          "Ð³Ð¾",
+          "ÑĢÐµ",
+          "</w>",
+          "Ġ",
+          "ĠÑģÑĤÐ¾Ð¸ÑĤ",
+          "ĠÑģÑĤÐ°ÑĢÐ¸Ð½",
+          "Ð½ÑĭÐ¹",
+          "ĠÐ·Ð°Ð¼Ð¾Ðº",
+          "</s>",
+          "</s>",
+          "гор+е",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          225,
+          60256,
+          730,
+          279,
+          60257,
+          225,
+          2418,
+          14065,
+          691,
+          11796,
+          2,
+          2,
+          52500,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.982797,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на горе стоит старинный замок",
+        "word": "стоит",
+        "variants": [
+          "ст+оит",
+          "сто+ит"
+        ],
+        "marked_text": "на горе <w>стоит</w>  старинный замок",
+        "preprocessed_text": "на горе <w>стоит</w>  старинный замок",
+        "hypothesis": "ст+оит",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "ĠÐ³Ð¾ÑĢÐµ",
+          "Ġ",
+          "<w>",
+          "ÑģÑĤÐ¾Ð¸ÑĤ",
+          "</w>",
+          "Ġ",
+          "ĠÑģÑĤÐ°ÑĢÐ¸Ð½",
+          "Ð½ÑĭÐ¹",
+          "ĠÐ·Ð°Ð¼Ð¾Ðº",
+          "</s>",
+          "</s>",
+          "ст+оит",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          9746,
+          225,
+          60256,
+          11113,
+          60257,
+          225,
+          14065,
+          691,
+          11796,
+          2,
+          2,
+          50267,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.965752,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на горе стоит старинный замок",
+        "word": "стоит",
+        "variants": [
+          "ст+оит",
+          "сто+ит"
+        ],
+        "marked_text": "на горе <w>стоит</w>  старинный замок",
+        "preprocessed_text": "на горе <w>стоит</w>  старинный замок",
+        "hypothesis": "сто+ит",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "ĠÐ³Ð¾ÑĢÐµ",
+          "Ġ",
+          "<w>",
+          "ÑģÑĤÐ¾Ð¸ÑĤ",
+          "</w>",
+          "Ġ",
+          "ĠÑģÑĤÐ°ÑĢÐ¸Ð½",
+          "Ð½ÑĭÐ¹",
+          "ĠÐ·Ð°Ð¼Ð¾Ðº",
+          "</s>",
+          "</s>",
+          "сто+ит",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          9746,
+          225,
+          60256,
+          11113,
+          60257,
+          225,
+          14065,
+          691,
+          11796,
+          2,
+          2,
+          50306,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.055534,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на горе стоит старинный замок",
+        "word": "замок",
+        "variants": [
+          "з+амок",
+          "зам+ок"
+        ],
+        "marked_text": "на горе стоит старинный <w>замок</w> ",
+        "preprocessed_text": "на горе стоит старинный <w>замок</w> ",
+        "hypothesis": "з+амок",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "ĠÐ³Ð¾ÑĢÐµ",
+          "ĠÑģÑĤÐ¾Ð¸ÑĤ",
+          "ĠÑģÑĤÐ°ÑĢÐ¸Ð½",
+          "Ð½ÑĭÐ¹",
+          "Ġ",
+          "<w>",
+          "Ð·Ð°",
+          "Ð¼Ð¾Ðº",
+          "</w>",
+          "Ġ",
+          "</s>",
+          "</s>",
+          "з+амок",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          9746,
+          2418,
+          14065,
+          691,
+          225,
+          60256,
+          304,
+          4512,
+          60257,
+          225,
+          2,
+          2,
+          51981,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.998711,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "на горе стоит старинный замок",
+        "word": "замок",
+        "variants": [
+          "з+амок",
+          "зам+ок"
+        ],
+        "marked_text": "на горе стоит старинный <w>замок</w> ",
+        "preprocessed_text": "на горе стоит старинный <w>замок</w> ",
+        "hypothesis": "зам+ок",
+        "tokens": [
+          "<s>",
+          "Ð½Ð°",
+          "ĠÐ³Ð¾ÑĢÐµ",
+          "ĠÑģÑĤÐ¾Ð¸ÑĤ",
+          "ĠÑģÑĤÐ°ÑĢÐ¸Ð½",
+          "Ð½ÑĭÐ¹",
+          "Ġ",
+          "<w>",
+          "Ð·Ð°",
+          "Ð¼Ð¾Ðº",
+          "</w>",
+          "Ġ",
+          "</s>",
+          "</s>",
+          "зам+ок",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          271,
+          9746,
+          2418,
+          14065,
+          691,
+          225,
+          60256,
+          304,
+          4512,
+          60257,
+          225,
+          2,
+          2,
+          51530,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.001719,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "уже прошёл целый час",
+        "word": "уже",
+        "variants": [
+          "+уже",
+          "уж+е"
+        ],
+        "marked_text": "<w>уже</w>  прошёл целый час",
+        "preprocessed_text": "<w>уже</w>  прошёл целый час",
+        "hypothesis": "+уже",
+        "tokens": [
+          "<s>",
+          "<w>",
+          "ÑĥÐ¶Ðµ",
+          "</w>",
+          "Ġ",
+          "ĠÐ¿ÑĢÐ¾ÑĪÑĳÐ»",
+          "ĠÑĨÐµÐ»ÑĭÐ¹",
+          "ĠÑĩÐ°Ñģ",
+          "</s>",
+          "</s>",
+          "+уже",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          60256,
+          2858,
+          60257,
+          225,
+          19617,
+          8720,
+          1723,
+          2,
+          2,
+          50266,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.49707,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "уже прошёл целый час",
+        "word": "уже",
+        "variants": [
+          "+уже",
+          "уж+е"
+        ],
+        "marked_text": "<w>уже</w>  прошёл целый час",
+        "preprocessed_text": "<w>уже</w>  прошёл целый час",
+        "hypothesis": "уж+е",
+        "tokens": [
+          "<s>",
+          "<w>",
+          "ÑĥÐ¶Ðµ",
+          "</w>",
+          "Ġ",
+          "ĠÐ¿ÑĢÐ¾ÑĪÑĳÐ»",
+          "ĠÑĨÐµÐ»ÑĭÐ¹",
+          "ĠÑĩÐ°Ñģ",
+          "</s>",
+          "</s>",
+          "уж+е",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          60256,
+          2858,
+          60257,
+          225,
+          19617,
+          8720,
+          1723,
+          2,
+          2,
+          50257,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.994262,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "большие белки прыгали по веткам",
+        "word": "большие",
+        "variants": [
+          "б+ольшие",
+          "больш+ие"
+        ],
+        "marked_text": "<w>большие</w>  белки прыгали по веткам",
+        "preprocessed_text": "<w>большие</w>  белки прыгали по веткам",
+        "hypothesis": "б+ольшие",
+        "tokens": [
+          "<s>",
+          "<w>",
+          "Ð±Ð¾Ð»ÑĮ",
+          "ÑĪÐ¸Ðµ",
+          "</w>",
+          "Ġ",
+          "ĠÐ±ÐµÐ»ÐºÐ¸",
+          "ĠÐ¿ÑĢÑĭÐ³",
+          "Ð°Ð»Ð¸",
+          "ĠÐ¿Ð¾",
+          "ĠÐ²ÐµÑĤ",
+          "ÐºÐ°Ð¼",
+          "</s>",
+          "</s>",
+          "б+ольшие",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          60256,
+          2964,
+          1753,
+          60257,
+          225,
+          32186,
+          13826,
+          824,
+          408,
+          4048,
+          3391,
+          2,
+          2,
+          51986,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.428746,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "большие белки прыгали по веткам",
+        "word": "большие",
+        "variants": [
+          "б+ольшие",
+          "больш+ие"
+        ],
+        "marked_text": "<w>большие</w>  белки прыгали по веткам",
+        "preprocessed_text": "<w>большие</w>  белки прыгали по веткам",
+        "hypothesis": "больш+ие",
+        "tokens": [
+          "<s>",
+          "<w>",
+          "Ð±Ð¾Ð»ÑĮ",
+          "ÑĪÐ¸Ðµ",
+          "</w>",
+          "Ġ",
+          "ĠÐ±ÐµÐ»ÐºÐ¸",
+          "ĠÐ¿ÑĢÑĭÐ³",
+          "Ð°Ð»Ð¸",
+          "ĠÐ¿Ð¾",
+          "ĠÐ²ÐµÑĤ",
+          "ÐºÐ°Ð¼",
+          "</s>",
+          "</s>",
+          "больш+ие",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          60256,
+          2964,
+          1753,
+          60257,
+          225,
+          32186,
+          13826,
+          824,
+          408,
+          4048,
+          3391,
+          2,
+          2,
+          50390,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.998951,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "большие белки прыгали по веткам",
+        "word": "белки",
+        "variants": [
+          "б+елки",
+          "белк+и"
+        ],
+        "marked_text": "большие <w>белки</w>  прыгали по веткам",
+        "preprocessed_text": "большие <w>белки</w>  прыгали по веткам",
+        "hypothesis": "б+елки",
+        "tokens": [
+          "<s>",
+          "Ð±Ð¾Ð»ÑĮ",
+          "ÑĪÐ¸Ðµ",
+          "Ġ",
+          "<w>",
+          "Ð±ÐµÐ»",
+          "Ðº",
+          "Ð",
+          "¸",
+          "</w>",
+          "Ġ",
+          "ĠÐ¿ÑĢÑĭÐ³",
+          "Ð°Ð»Ð¸",
+          "ĠÐ¿Ð¾",
+          "ĠÐ²ÐµÑĤ",
+          "ÐºÐ°Ð¼",
+          "</s>",
+          "</s>",
+          "б+елки",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          2964,
+          1753,
+          225,
+          60256,
+          4592,
+          296,
+          145,
+          121,
+          60257,
+          225,
+          13826,
+          824,
+          408,
+          4048,
+          3391,
+          2,
+          2,
+          52040,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.989364,
+        "token_type_ids": null
+      },
+      {
+        "source_sentence": "большие белки прыгали по веткам",
+        "word": "белки",
+        "variants": [
+          "б+елки",
+          "белк+и"
+        ],
+        "marked_text": "большие <w>белки</w>  прыгали по веткам",
+        "preprocessed_text": "большие <w>белки</w>  прыгали по веткам",
+        "hypothesis": "белк+и",
+        "tokens": [
+          "<s>",
+          "Ð±Ð¾Ð»ÑĮ",
+          "ÑĪÐ¸Ðµ",
+          "Ġ",
+          "<w>",
+          "Ð±ÐµÐ»",
+          "Ðº",
+          "Ð",
+          "¸",
+          "</w>",
+          "Ġ",
+          "ĠÐ¿ÑĢÑĭÐ³",
+          "Ð°Ð»Ð¸",
+          "ĠÐ¿Ð¾",
+          "ĠÐ²ÐµÑĤ",
+          "ÐºÐ°Ð¼",
+          "</s>",
+          "</s>",
+          "белк+и",
+          "</s>"
+        ],
+        "input_ids": [
+          0,
+          2964,
+          1753,
+          225,
+          60256,
+          4592,
+          296,
+          145,
+          121,
+          60257,
+          225,
+          13826,
+          824,
+          408,
+          4048,
+          3391,
+          2,
+          2,
+          50515,
+          2
+        ],
+        "attention_mask": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "prob_true": 0.024819,
+        "token_type_ids": null
+      }
+    ]
+  }
+}

@@ -12,6 +12,9 @@ xcuserdata/
 *.npy
 models/
 out/
+# ...but `models/` (case-insensitive on macOS) must NOT swallow the Swift CoreML-runner SOURCE.
+!Sources/RUAccentCoreML/Models/
+!Sources/RUAccentCoreML/Models/**
 
 # --- Upstream RUAccent python sources + weights (cloned/downloaded locally) ---
 ruaccent-src/
@@ -26,6 +29,14 @@ ruaccent-src/
 __pycache__/
 *.pyc
 
+# --- converter scratch (downloaded weights, caches, binary refs) ---
+converter/_work/
+converter/_inspect/
+converter/fixtures/refs/
+
 # --- misc ---
 .DS_Store
 logs/
+
+# --- iOS probe Xcode build output ---
+repro/RuaccentProbe-iOS/build/

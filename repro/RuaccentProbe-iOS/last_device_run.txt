@@ -1,0 +1,28 @@
+RP: start device=iPhone ios=26.5.1
+RP: model=M1_accent loading M1_accent_fp16.mlmodelc
+RP: model=M1_accent placement ane=163 gpu=0 cpu=14 other=0 (ane 92%)
+RP:   квазиблагоприятный: cpu:OK 0.3ms gpu:OK 0.2ms Δ0e+00 ane:OK 0.6ms Δ7e-02 all:OK 0.5ms Δ7e-02
+RP:   молоко: cpu:OK 0.2ms gpu:OK 0.2ms Δ0e+00 ane:OK 0.4ms Δ2e-01 all:OK 0.4ms Δ2e-01
+RP:   монокристаллический: cpu:OK 0.2ms gpu:OK 0.2ms Δ0e+00 ane:OK 0.4ms Δ1e-01 all:OK 0.5ms Δ1e-01
+RP:   переподготовка: cpu:OK 0.2ms gpu:OK 0.4ms Δ0e+00 ane:OK 0.3ms Δ2e-01 all:OK 0.5ms Δ2e-01
+RP: model=M1_accent -> PASS
+RP: model=M2_omograph loading M2_omograph_fp16_pal8.mlmodelc
+RP: model=M2_omograph placement ane=219 gpu=42 cpu=2 other=27 (ane 75%)
+RP:   зам+ок: cpu:OK 5.0ms gpu:OK 10.7ms Δ7e-03 ane:OK 3.1ms Δ0e+00 all:OK 6.8ms Δ7e-03
+RP:   з+амок: cpu:OK 3.2ms gpu:OK 4.9ms Δ9e-03 ane:OK 3.1ms Δ0e+00 all:OK 5.0ms Δ9e-03
+RP:   з+амок: cpu:OK 3.3ms gpu:OK 10.0ms Δ2e-02 ane:OK 1.0ms Δ2e-02 all:OK 6.0ms Δ2e-02
+RP:   зам+ок: cpu:OK 3.1ms gpu:OK 6.4ms Δ2e-02 ane:OK 1.0ms Δ2e-02 all:OK 3.6ms Δ2e-02
+RP: model=M2_omograph -> PASS
+RP: model=M3_stress loading M3_stress_fp16_pal8.mlmodelc
+RP: model=M3_stress placement ane=73 gpu=15 cpu=2 other=21 (ane 65%)
+RP:   M3_stress__0: cpu:OK 0.2ms gpu:OK 4.6ms Δ5e-02 ane:OK 0.2ms Δ0e+00 all:OK 5.5ms Δ5e-02
+RP:   M3_stress__1: cpu:OK 0.2ms gpu:OK 4.6ms Δ5e-02 ane:OK 0.2ms Δ0e+00 all:OK 4.4ms Δ5e-02
+RP:   M3_stress__2: cpu:OK 0.2ms gpu:OK 5.9ms Δ3e-02 ane:OK 0.4ms Δ3e-02 all:OK 3.1ms Δ3e-02
+RP: model=M3_stress -> PASS
+RP: model=M4_yo loading M4_yo_fp16.mlmodelc
+RP: model=M4_yo placement ane=73 gpu=0 cpu=14 other=1 (ane 82%)
+RP:   M4_yo__0: cpu:OK 0.2ms gpu:OK 0.2ms Δ0e+00 ane:OK 0.2ms Δ0e+00 all:OK 0.2ms Δ0e+00
+RP:   M4_yo__1: cpu:OK 0.2ms gpu:OK 0.2ms Δ0e+00 ane:OK 0.2ms Δ0e+00 all:OK 0.2ms Δ0e+00
+RP:   M4_yo__2: cpu:OK 0.2ms gpu:OK 0.2ms Δ0e+00 ane:OK 0.3ms Δ3e-02 all:OK 0.4ms Δ3e-02
+RP: model=M4_yo -> PASS
+RP: DONE ALL MODELS PASS on device ✅
