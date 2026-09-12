@@ -10,7 +10,7 @@ plan, locked decisions, the integration contract, and the carried CoreML learnin
 
 Canonical repo: **https://github.com/iliasaz/ruaccent-coreml** (private). `origin` only.
 Upstream Python: **https://github.com/Den4ikAI/ruaccent** (model variant `turbo3.1`;
-confirm artifacts + **license** in Phase 0). Sister project (the consumer + source of
+artifacts confirmed; **license is MIT**, settled — see `NOTICE` and README). Sister project (the consumer + source of
 the learnings): `~/Developer/chatterbox-coreml`.
 
 ## Build & test
