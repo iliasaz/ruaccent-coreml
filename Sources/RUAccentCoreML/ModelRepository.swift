@@ -3,7 +3,7 @@ import Hub
 import os
 
 /// Downloads the RUAccentCoreML on-device bundle (the four CoreML models, the packed
-/// `.rapack` dictionaries, and the tokenizer files) from the **(private) HF repo**
+/// `.rapack` dictionaries, and the tokenizer files) from the **HF repo**
 /// `iliasaz/ruaccent-coreml`, then hands the local directory to `RUAccent(modelDirectory:)`.
 ///
 /// Mirrors `chatterbox-coreml`'s `ModelRepository` (`iliasaz/chatterbox-turbo-coreml`): large
@@ -120,9 +120,9 @@ public enum ModelRepository {
     /// pass to `RUAccent(modelDirectory:)`.
     ///
     /// - Parameters:
-    ///   - repoId: the HF model repo (default: the private `iliasaz/ruaccent-coreml`).
+    ///   - repoId: the HF model repo (default: the public `iliasaz/ruaccent-coreml`).
     ///   - hfHome: when provided, treated as `HF_HOME`; the snapshot is written under `<hfHome>/hub`.
-    ///   - hfToken: an explicit HF access token (required for the **private** default repo).
+    ///   - hfToken: an explicit HF access token (only needed for a private repo; the default is public).
     ///     Resolution order: this parameter → `HF_TOKEN` env → `HUGGING_FACE_HUB_TOKEN` env →
     ///     (via `HubApi`) the standard CLI token files (`$HF_HOME/token`, `~/.cache/huggingface/token`).
     ///   - matching: file globs to fetch (default: the full `runtimeGlobs`).

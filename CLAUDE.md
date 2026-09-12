@@ -8,10 +8,10 @@ On-device **Russian word stress (accentuation)** for Apple Silicon — a CoreML 
 **Read [`docs/MIGRATION_PLAN.md`](docs/MIGRATION_PLAN.md) first** — it has the phased
 plan, locked decisions, the integration contract, and the carried CoreML learnings.
 
-Canonical repo: **https://github.com/iliasaz/ruaccent-coreml** (private). `origin` only.
+Canonical repo: **https://github.com/iliasaz/ruaccent-coreml**. `origin` only.
 Upstream Python: **https://github.com/Den4ikAI/ruaccent** (model variant `turbo3.1`;
 artifacts confirmed; **license is MIT**, settled — see `NOTICE` and README). Sister project (the consumer + source of
-the learnings): `~/Developer/chatterbox-coreml`.
+the learnings): a sibling checkout of `chatterbox-coreml`.
 
 ## Build & test
 ```bash
@@ -45,7 +45,7 @@ CoreML/Swift-runtime: `xcodebuild ... -destination 'platform=macOS'` and
   commit binaries.
 
 ## Conventions
-- HF auth: machine is `iliasaz`; `HF_HOME=/Users/ilia/Downloads/HF_HOME` (export it
+- HF auth: machine is `iliasaz`; `HF_HOME=/path/to/hf_home` (export it
   explicitly in non-interactive shells). `.venv`: coremltools 9.0 / torch 2.8 / Python 3.13.
 - Don't bump dependency versions or commit without being asked. Match surrounding style.
 - The integration boundary is the `RussianStressing` protocol + `StressNotation`; default

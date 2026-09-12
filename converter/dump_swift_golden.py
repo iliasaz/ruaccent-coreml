@@ -20,11 +20,10 @@ and emits TWO sections:
 This script does NOT modify dump_ruaccent_fixtures.py; it reuses its patterns.
 
 Run:
-  export HF_HOME=/Users/ilia/Downloads/HF_HOME
-  /Users/ilia/Developer/ruaccent-coreml/.venv/bin/python converter/dump_swift_golden.py
+  export HF_HOME=/path/to/hf_home
+  .venv/bin/python converter/dump_swift_golden.py
 """
 import os, sys, json, re
-os.environ.setdefault("HF_HOME", "/Users/ilia/Downloads/HF_HOME")
 import numpy as np
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

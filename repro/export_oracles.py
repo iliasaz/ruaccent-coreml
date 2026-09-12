@@ -4,7 +4,7 @@ onnxruntime logit refs. Consumed by the Swift RuaccentProbe to check parity acro
 
   repro/oracles.json : { model: {mlpackage, seq_fixed|null, inputs[], cases:[{ids/mask/tt, expected_argmax, label}]} }
 
-Run: /Users/ilia/Developer/chatterbox-coreml/.venv/bin/python repro/export_oracles.py
+Run: python repro/export_oracles.py
 """
 import os, json, glob
 import numpy as np

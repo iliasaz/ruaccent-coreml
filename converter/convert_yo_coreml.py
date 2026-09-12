@@ -10,7 +10,7 @@ Gates (Mac CPU):
   1. torch(rebuilt) vs onnxruntime(model.onnx)   expect ~1e-4
   2. coreml fp16 vs onnxruntime                   expect logit |Δ|<~5e-2 AND per-token argmax identical
 
-Run: /Users/ilia/Developer/chatterbox-coreml/.venv/bin/python converter/convert_yo_coreml.py
+Run: python converter/convert_yo_coreml.py
 """
 import os, json, glob
 import numpy as np

@@ -263,8 +263,8 @@ Notes:
 
 Re-run any time:
 ```bash
-export HF_HOME=/Users/ilia/Downloads/HF_HOME
-/Users/ilia/Developer/ruaccent-coreml/.venv/bin/python converter/pack_dicts.py
+export HF_HOME=/path/to/hf_home
+.venv/bin/python converter/pack_dicts.py
 ```
 
 ---

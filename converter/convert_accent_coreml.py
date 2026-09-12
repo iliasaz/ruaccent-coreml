@@ -13,7 +13,7 @@ Parity gates:
       words + OOV fixtures  -> FUNCTIONAL equivalence with the actual upstream pipeline.
 
 Run with the conversion venv (torch 2.8 + coremltools 9 + transformers):
-  /Users/ilia/Developer/chatterbox-coreml/.venv/bin/python converter/convert_accent_coreml.py
+  python converter/convert_accent_coreml.py
 """
 import os, json, glob
 import numpy as np

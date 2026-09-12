@@ -168,7 +168,7 @@ let model = try await ChatterboxCoreMLModel.load(
 
 ```swift
 let accentor = try RUAccentCoreML.RUAccent(
-    modelDirectory: URL(fileURLWithPath: "/Users/ilia/Developer/ruaccent-coreml/converter/_work"))
+    modelDirectory: URL(fileURLWithPath: "/path/to/ruaccent-coreml/converter/_work"))
 ```
 
 **Both honor manual stress.** A caller-supplied `+` or U+0301 in the input is preserved per-word and
@@ -225,7 +225,7 @@ chatterbox uses, both still work but land in separate caches (no sharing).
    (`Tests/RUAccentCoreMLTests/ModelRepositoryTests.swift:8,16`):
 
    ```bash
-   HF_HOME=/Users/ilia/Downloads/HF_HOME RUACCENT_HUB_TEST=1 HF_TOKEN=<token> swift test
+   RUACCENT_HUB_TEST=1 HF_TOKEN=<token> swift test
    ```
 
 3. **Sentence-level parity test (recommended).** Add a chatterbox test over restored-`ё` words (M4)
