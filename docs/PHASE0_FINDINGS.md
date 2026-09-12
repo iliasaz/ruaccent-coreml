@@ -13,6 +13,20 @@ Upstream pinned at **RUAccent `1.5.8.3`**, model variant **`turbo3.1`**, run as
 
 ## 1. License (the gating decision)
 
+> **⚠️ SUPERSEDED — corrected 2026-09-05. The table below is what was true when this
+> was written; both of its licence readings are now wrong, and neither should be
+> quoted.** Upstream `Den4ikAI/ruaccent` **relicensed to MIT** in commit `39543da`
+> (2026-07-17, *"Change license from Creative Commons to MIT"*), and
+> [`ruaccent/accentuator`](https://huggingface.co/ruaccent/accentuator) is now tagged
+> **`license:mit`**, not `apache-2.0`. Verified at HEAD via the GitHub and HF APIs.
+> There is no NonCommercial or NoDerivatives constraint on anything here, so the
+> "clean-reimplementation" position is no longer a *legal requirement* — it remains
+> an accurate description of how the port was built, and the code is MIT © Ilia
+> Sazonov either way. See [`NOTICE`](../NOTICE). The entry is left standing as a
+> dated record; **note also that the `ruaccent-src/` clone is pinned at `704bd30`
+> (2024-10-24), so its `LICENSE` file still shows the old CC text** — that pin is
+> exactly how the stale reading survived.
+
 | | What | License | Implication |
 |---|---|---|---|
 | **Weights + dictionaries** | HF repo `ruaccent/accentuator` | **`apache-2.0`** (HF card tag) | The artifacts we convert + redistribute are OK, **including commercially**, with attribution. |

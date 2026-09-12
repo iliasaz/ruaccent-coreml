@@ -1,0 +1,45 @@
+RUAccentCoreML
+Copyright (c) 2026 Ilia Sazonov
+
+This product is licensed under the MIT License. See LICENSE for the full text.
+
+
+## What this copyright covers, and what it does not
+
+**The code** — the Swift package (`Sources/`, `Tests/`), the converter
+(`converter/`) and the documentation — is original work, © Ilia Sazonov,
+MIT-licensed under LICENSE. It is an independent reimplementation of RUAccent's
+inference path for CoreML rather than a translation of upstream's Python source.
+(Upstream is MIT, so copying would have been permissible with attribution; the
+independence is a fact about how this was built, not a legal necessity.)
+
+**The model weights and dictionaries are not covered by that copyright.** The
+CoreML packages and packed dictionaries distributed at
+https://huggingface.co/iliasaz/ruaccent-coreml are *format conversions* of models
+and data published by the RUAccent authors. They are derivative works that inherit
+the upstream licence, and copyright in them stays with Denis Petrov.
+
+
+## Upstream
+
+### RUAccent — Denis Petrov (MIT)
+
+  https://github.com/Den4ikAI/ruaccent
+  Copyright 2026 Denis Petrov
+
+Russian lexical stress placement and homograph resolution: the models, the
+dictionaries, and the reference implementation this port is validated against.
+Upstream relicensed from Creative Commons to MIT in commit `39543da` (2026-07-17);
+the LICENSE at HEAD is plain MIT.
+
+The weights this port repackages come from
+https://huggingface.co/ruaccent/accentuator, published under the MIT licence and
+not gated.
+
+
+## Consumers
+
+  chatterbox-coreml   https://github.com/iliasaz/chatterbox-coreml
+
+On-device Chatterbox TTS for Apple Silicon, which uses this package to place
+Russian stress before multilingual synthesis.
