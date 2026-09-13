@@ -3,9 +3,9 @@ import Foundation
 @testable import RUAccentCoreML
 
 /// Opt-in network test for the HF download path (mirrors chatterbox's `HubDownloadTests`).
-/// Disabled by default — it needs network + a token for the **private** repo. Run with:
+/// Disabled by default — it needs network. Run with:
 ///
-///   HF_HOME=/Users/ilia/Downloads/HF_HOME RUACCENT_HUB_TEST=1 \
+///   RUACCENT_HUB_TEST=1 \
 ///     swift test --filter ModelRepositoryTests
 ///
 /// It downloads the bundle from `iliasaz/ruaccent-coreml`, loads `RUAccent` from the snapshot

@@ -4,7 +4,7 @@ Self-contained Swift implementation spec for the **three tokenizer families** us
 RUAccent's four neural models. A Swift dev should be able to implement **byte-exact**
 tokenizers from this doc alone. Every id/size/string below was read directly from the
 artifact files and cross-checked by running the upstream `transformers` tokenizers
-(`/Users/ilia/Developer/ruaccent-coreml/.venv/bin/python`, transformers 5.12, **fast**
+(`.venv/bin/python`, transformers 5.12, **fast**
 tokenizers). All probe outputs in this doc are reproduced verbatim from those runs.
 
 Artifact roots (gitignored, present locally):

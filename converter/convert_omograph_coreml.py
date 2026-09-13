@@ -8,7 +8,7 @@ bias-adjacency extractor maps everything except in_proj/q_bias/v_bias; we add th
 (validated by GATE 1 — wrong q/v or layer order makes torch vs onnx diverge loudly).
 
 Cross-encoder: input_ids+attention_mask [1,S] (NO token_type_ids) -> logits [1,2]; index 1 = P(hyp correct).
-Run: /Users/ilia/Developer/chatterbox-coreml/.venv/bin/python converter/convert_omograph_coreml.py
+Run: python converter/convert_omograph_coreml.py
 """
 import os, json, glob, sys, re
 import numpy as np

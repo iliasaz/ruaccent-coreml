@@ -29,8 +29,8 @@ This shrinks the accents key region from 71.8 MB (raw) to ~17 MB.
 Output (gitignored): converter/_work/dictpack/{accents,omographs,yo_words,yo_homographs}.rapack
 
 Run:
-  export HF_HOME=/Users/ilia/Downloads/HF_HOME
-  /Users/ilia/Developer/ruaccent-coreml/.venv/bin/python converter/pack_dicts.py
+  export HF_HOME=/path/to/hf_home
+  .venv/bin/python converter/pack_dicts.py
 """
 import gzip
 import json

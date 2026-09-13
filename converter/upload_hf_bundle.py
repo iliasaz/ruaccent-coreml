@@ -21,12 +21,12 @@ can be handed straight to that initializer:
 
 Only the tokenizer files the Swift tokenizers actually read are staged (not the raw onnx /
 tokenizer.json). Run packers/converters first if `_work` is empty:
-    export HF_HOME=/Users/ilia/Downloads/HF_HOME
+    export HF_HOME=/path/to/hf_home
     .venv/bin/python converter/pack_dicts.py        # -> _work/dictpack/*.rapack
     # (and the convert_*_coreml.py scripts -> _work/coreml/*.mlpackage)
 
 Usage:
-    export HF_HOME=/Users/ilia/Downloads/HF_HOME            # machine is logged in as iliasaz
+    export HF_HOME=/path/to/hf_home            # machine is logged in as iliasaz
     .venv/bin/python converter/upload_hf_bundle.py                 # stage + create + upload
     .venv/bin/python converter/upload_hf_bundle.py --stage-only    # stage only, no network
     .venv/bin/python converter/upload_hf_bundle.py --repo-id iliasaz/ruaccent-coreml

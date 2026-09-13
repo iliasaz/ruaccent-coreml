@@ -22,7 +22,6 @@ python-crfsuite / koziev. This is output-neutral (verified: only ``rule_accent.l
 is referenced in ruaccent.py; ``rule_accent.accentuate`` is never invoked).
 """
 import os, sys, json, gzip
-os.environ.setdefault("HF_HOME", "/Users/ilia/Downloads/HF_HOME")
 import numpy as np
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

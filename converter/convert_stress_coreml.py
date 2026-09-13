@@ -6,7 +6,7 @@ token_type_ids (all-zeros, single segment). Runtime feeds ONE razdel sentence, n
 all-ones mask => fp16-safe; neutralize transformers-5.2 create_bidirectional_mask (new_ones) like M4.
 
 Gates (Mac CPU): 1) torch vs onnxruntime ~1e-4; 2) coreml fp16 vs onnxruntime: |Δ|<~5e-2 + argmax identical.
-Run: /Users/ilia/Developer/chatterbox-coreml/.venv/bin/python converter/convert_stress_coreml.py
+Run: python converter/convert_stress_coreml.py
 """
 import os, json, glob, sys
 import numpy as np

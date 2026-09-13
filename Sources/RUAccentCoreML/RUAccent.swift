@@ -139,9 +139,9 @@ public final class RUAccent: RussianStressing {
     }
 
     /// Download-and-load convenience: fetch the on-device bundle (CoreML models + `.rapack`
-    /// dictionaries + tokenizers) from the private HF repo via `ModelRepository`, then load it.
+    /// dictionaries + tokenizers) from the HF repo via `ModelRepository`, then load it.
     /// The downloaded snapshot directory has the same `coreml/`+`dictpack/`+`nn/` layout as
-    /// `init(modelDirectory:)`. A token is required for the private default repo (see
+    /// `init(modelDirectory:)`. A token is only needed for a private repo (see
     /// `ModelRepository.download` for the resolution order).
     public convenience init(
         downloadingFrom repoId: String = ModelRepository.defaultRepoId,

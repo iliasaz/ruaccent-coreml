@@ -16,7 +16,7 @@ PROJECT: Port RUAccent (Russian lexical stress) to on-device CoreML, numerically
 equivalent to the Python/ONNX upstream, shipped as the Swift package RUAccentCoreML.
 Targets macOS 15+/iOS 18+ arm64, ANE-resident fp16, validated ON DEVICE.
 
-REPO: /Users/ilia/Developer/ruaccent-coreml
+REPO: <path to your ruaccent-coreml checkout>
   Upstream Python (read it):     ruaccent-src/ruaccent/*.py
   Downloaded HF configs/tokens:  converter/_inspect/nn/...   (config.json, tokenizer_config.json, etc.)
   Migration plan + learnings:    docs/MIGRATION_PLAN.md  and  CLAUDE.md

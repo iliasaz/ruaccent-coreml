@@ -140,7 +140,7 @@ end-to-end on device.
   as small packed resources.
 
 **Env / conventions:**
-- This machine is authed to HuggingFace as `iliasaz`; `HF_HOME=/Users/ilia/Downloads/HF_HOME`
+- This machine is authed to HuggingFace as `iliasaz`; `HF_HOME=/path/to/hf_home`
   (**export it explicitly** in non-interactive shells or files land in `~/.cache`).
 - Match chatterbox's `.venv`: coremltools 9.0, torch 2.8.0, Python 3.13.
 - Device recipe (from chatterbox CLAUDE.md): build/install via `xcodebuild` + `devicectl`;

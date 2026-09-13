@@ -3,7 +3,7 @@
 
 8-bit k-means palettization (deterministic) of M2/M3 (embedding-dominated). Re-checks decision/argmax
 parity vs the onnxruntime oracles so size optimization doesn't break numeric equivalency.
-Run: /Users/ilia/Developer/chatterbox-coreml/.venv/bin/python converter/palettize.py
+Run: python converter/palettize.py
 """
 import os, glob, sys
 import numpy as np
